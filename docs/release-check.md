@@ -8,3 +8,4 @@ Before pushing a site change, I check these points.
 4. Links point to the right AbzumsAI repos.
 5. Text fits on a narrow screen.
 6. No private data or token is present.
+7. The material counts match the current pushed repos.
