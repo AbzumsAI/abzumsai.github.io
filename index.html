@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="AbzumsAI course material, code, slides, and question bot links.">
+    <meta name="theme-color" content="#08090a">
     <meta property="og:title" content="AbzumsAI">
     <meta property="og:description" content="Public home for AbzumsAI course material.">
     <meta property="og:image" content="assets/abzumsai-logo.png">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#repos">Skip to repos</a>
     <header class="site-header" aria-label="Site header">
       <a class="brand" href="#top" aria-label="AbzumsAI home">
         <img src="assets/abzumsai-logo.png" alt="" width="40" height="40">
@@ -93,14 +95,18 @@
             <h2 id="repos-title">Course work in one place</h2>
           </div>
           <div class="filters" aria-label="Repo filters">
-            <button class="filter-button active" type="button" data-filter="all">All</button>
-            <button class="filter-button" type="button" data-filter="course">Course</button>
-            <button class="filter-button" type="button" data-filter="code">Code</button>
-            <button class="filter-button" type="button" data-filter="docs">Docs</button>
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="course" aria-pressed="false">Course</button>
+            <button class="filter-button" type="button" data-filter="code" aria-pressed="false">Code</button>
+            <button class="filter-button" type="button" data-filter="docs" aria-pressed="false">Docs</button>
           </div>
         </div>
 
-        <p class="repo-count" aria-live="polite">Showing all repos</p>
+        <div class="repo-tools">
+          <label class="sr-only" for="repo-search">Search repos</label>
+          <input id="repo-search" type="search" name="repo-search" placeholder="Search repos" autocomplete="off">
+          <p class="repo-count" aria-live="polite">Showing all repos</p>
+        </div>
 
         <div class="repo-grid">
           <article class="repo-card" data-kind="course">
@@ -152,6 +158,7 @@
             <a href="https://github.com/AbzumsAI/.github">Open repo</a>
           </article>
         </div>
+        <p class="empty-state" hidden>No repos match this search.</p>
       </section>
     </main>
 

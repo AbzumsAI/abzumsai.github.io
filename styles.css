@@ -34,6 +34,41 @@ a {
   color: inherit;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgba(49, 95, 186, 0.45);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 20;
+  transform: translateY(-160%);
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: var(--ink);
+  color: var(--white);
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -82,7 +117,7 @@ a {
 }
 
 .hero {
-  min-height: 76svh;
+  min-height: min(76svh, 760px);
   display: flex;
   align-items: center;
   padding: clamp(48px, 8vw, 96px) clamp(18px, 4vw, 64px);
@@ -244,7 +279,7 @@ a {
 }
 
 .path-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
 }
 
 .path-grid article,
@@ -311,14 +346,44 @@ a {
   color: var(--white);
 }
 
-.repo-count {
-  min-height: 24px;
-  margin: 0 0 18px;
-  color: var(--muted);
+.repo-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
 }
 
-.repo-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.repo-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 18px;
+}
+
+.repo-tools input {
+  width: min(360px, 100%);
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 14px;
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+}
+
+.repo-count {
+  min-height: 24px;
+  margin: 0;
+  color: var(--muted);
+  text-align: right;
+}
+
+.empty-state {
+  margin: 22px 0 0;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  padding: 18px;
+  background: var(--white);
+  color: var(--muted);
+  text-align: center;
 }
 
 .repo-card {
@@ -387,7 +452,6 @@ a {
     background-position: center, center, right -120px center;
   }
 
-  .path-grid,
   .repo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -408,7 +472,7 @@ a {
   }
 
   .hero {
-    min-height: 58svh;
+    min-height: min(70svh, 760px);
     background-position: center, center, center 24px;
     background-size: auto, auto, 320px;
     padding-top: 148px;
@@ -418,7 +482,6 @@ a {
     width: min(100%, 350px);
   }
 
-  .path-grid,
   .repo-grid {
     grid-template-columns: 1fr;
   }
@@ -441,6 +504,21 @@ a {
     flex-direction: column;
   }
 
+  .filters,
+  .repo-tools,
+  .repo-tools input {
+    width: 100%;
+  }
+
+  .repo-tools {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .repo-count {
+    text-align: left;
+  }
+
   .status-strip {
     align-items: flex-start;
     flex-direction: column;
@@ -448,6 +526,35 @@ a {
 
   .repo-card {
     min-height: 190px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    gap: 14px;
+    min-height: 0;
+  }
+
+  .site-header nav {
+    overflow-x: auto;
+    padding-bottom: 4px;
+    white-space: nowrap;
+  }
+
+  .hero {
+    padding-top: 132px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 18vw, 4.1rem);
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .filter-button {
+    flex: 1 1 120px;
   }
 }
 
