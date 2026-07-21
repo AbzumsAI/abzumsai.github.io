@@ -8,6 +8,7 @@ required = [
     "https://github.com/AbzumsAI",
     "https://t.me/AbzumsAI",
     "https://github.com/AbzumsAI/Assignments",
+    "https://github.com/AbzumsAI/Assignments/tree/main/MachineLearningHomework",
     "https://github.com/AbzumsAI/Notebooks",
     "https://github.com/AbzumsAI/Slides",
     "https://github.com/AbzumsAI/Problems",
