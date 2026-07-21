@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AbzumsAI course material, code, slides, and question bot links.">
+    <meta property="og:title" content="AbzumsAI">
+    <meta property="og:description" content="Public home for AbzumsAI course material.">
+    <meta property="og:image" content="assets/abzumsai-logo.png">
+    <title>AbzumsAI</title>
+    <link rel="icon" href="assets/abzumsai-logo.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="#top" aria-label="AbzumsAI home">
+        <img src="assets/abzumsai-logo.png" alt="" width="40" height="40">
+        <span>AbzumsAI</span>
+      </a>
+      <nav aria-label="Main links">
+        <a href="#repos">Repos</a>
+        <a href="#path">Course path</a>
+        <a href="https://t.me/AbzumsAI">Telegram</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <p class="eyebrow">AI course material for healthcare students</p>
+          <h1 id="hero-title">AbzumsAI</h1>
+          <p class="hero-copy">
+            A public home for the course run by the Research and Technology Department of Alborz University of Medical Sciences with MedX Community.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="https://github.com/AbzumsAI">Open GitHub</a>
+            <a class="button secondary" href="https://t.me/AbzumsAI">Join Telegram</a>
+          </div>
+          <dl class="signals" aria-label="Course signals">
+            <div>
+              <dt>Study</dt>
+              <dd>Notebooks and slides</dd>
+            </div>
+            <div>
+              <dt>Practice</dt>
+              <dd>Assignments and problems</dd>
+            </div>
+            <div>
+              <dt>Ask</dt>
+              <dd>Telegram question bot</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="path-section" id="path" aria-labelledby="path-title">
+        <div class="section-heading">
+          <p class="eyebrow">Course path</p>
+          <h2 id="path-title">From math to machine learning</h2>
+        </div>
+        <div class="path-grid">
+          <article>
+            <span class="step-mark">01</span>
+            <h3>Start with the notebooks</h3>
+            <p>Use the notebook repo for Python practice, class tasks, and submission notes.</p>
+          </article>
+          <article>
+            <span class="step-mark">02</span>
+            <h3>Solve the problem sets</h3>
+            <p>Work through assignments, pretest material, and small Python examples from class.</p>
+          </article>
+          <article>
+            <span class="step-mark">03</span>
+            <h3>Keep the source clean</h3>
+            <p>Build PDFs from the LaTeX folders and keep slides ready for each session.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="repo-section" id="repos" aria-labelledby="repos-title">
+        <div class="section-heading wide">
+          <div>
+            <p class="eyebrow">Public repos</p>
+            <h2 id="repos-title">Course work in one place</h2>
+          </div>
+          <div class="filters" aria-label="Repo filters">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="course">Course</button>
+            <button class="filter-button" type="button" data-filter="code">Code</button>
+            <button class="filter-button" type="button" data-filter="docs">Docs</button>
+          </div>
+        </div>
+
+        <p class="repo-count" aria-live="polite">Showing all repos</p>
+
+        <div class="repo-grid">
+          <article class="repo-card" data-kind="course">
+            <span class="repo-kind">Course</span>
+            <h3>Assignments</h3>
+            <p>Homework sheets and answer material for the course.</p>
+            <a href="https://github.com/AbzumsAI/Assignments">Open repo</a>
+          </article>
+          <article class="repo-card" data-kind="course">
+            <span class="repo-kind">Course</span>
+            <h3>Notebooks</h3>
+            <p>Python notebooks and submission notes for class work.</p>
+            <a href="https://github.com/AbzumsAI/Notebooks">Open repo</a>
+          </article>
+          <article class="repo-card" data-kind="code">
+            <span class="repo-kind">Code</span>
+            <h3>Problems</h3>
+            <p>Small Python files used for examples and practice.</p>
+            <a href="https://github.com/AbzumsAI/Problems">Open repo</a>
+          </article>
+          <article class="repo-card" data-kind="course">
+            <span class="repo-kind">Course</span>
+            <h3>PreTest</h3>
+            <p>Exam and solution LaTeX sources for pretest work.</p>
+            <a href="https://github.com/AbzumsAI/PreTest">Open repo</a>
+          </article>
+          <article class="repo-card" data-kind="docs">
+            <span class="repo-kind">Docs</span>
+            <h3>Latex</h3>
+            <p>Homework template, shared course style, and build notes.</p>
+            <a href="https://github.com/AbzumsAI/Latex">Open repo</a>
+          </article>
+          <article class="repo-card" data-kind="docs">
+            <span class="repo-kind">Docs</span>
+            <h3>Slides</h3>
+            <p>Lecture slide workflow and source files.</p>
+            <a href="https://github.com/AbzumsAI/Slides">Open repo</a>
+          </article>
+          <article class="repo-card" data-kind="code">
+            <span class="repo-kind">Code</span>
+            <h3>QA-Bot</h3>
+            <p>Telegram bot source for common course questions.</p>
+            <a href="https://github.com/AbzumsAI/QA-Bot">Open repo</a>
+          </article>
+          <article class="repo-card" data-kind="docs">
+            <span class="repo-kind">Docs</span>
+            <h3>.github</h3>
+            <p>Organization profile shown on GitHub.</p>
+            <a href="https://github.com/AbzumsAI/.github">Open repo</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>AbzumsAI, Alborz University of Medical Sciences and MedX Community.</p>
+      <a href="https://github.com/AbzumsAI">GitHub organization</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
