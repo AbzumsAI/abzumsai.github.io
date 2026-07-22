@@ -3,6 +3,18 @@ const translations = {
     metaDescription: "AbzumsAI course material, student projects, teaching team, gallery, and public video links.",
     title: "AbzumsAI",
     skip: "Skip to content",
+    labels: {
+      siteHeader: "Site header",
+      home: "AbzumsAI home",
+      mainLinks: "Main links",
+      language: "Language",
+      primaryLinks: "Primary links",
+      courseSignals: "Course signals",
+      siteStatus: "Site status",
+      materialCounts: "Material counts",
+      galleryPhotos: "Gallery photos",
+      repoFilters: "Repo filters",
+    },
     nav: {
       materials: "Materials",
       projects: "Projects",
@@ -250,6 +262,18 @@ const translations = {
     metaDescription: "صفحه عمومی AbzumsAI برای منابع دوره، پروژه‌های دانشجویی، مدرسان، گالری و ویدیوهای عمومی.",
     title: "AbzumsAI",
     skip: "رفتن به محتوا",
+    labels: {
+      siteHeader: "سربرگ سایت",
+      home: "خانه AbzumsAI",
+      mainLinks: "پیوندهای اصلی",
+      language: "زبان",
+      primaryLinks: "پیوندهای مهم",
+      courseSignals: "نکات دوره",
+      siteStatus: "وضعیت سایت",
+      materialCounts: "شمار منابع",
+      galleryPhotos: "عکس‌های گالری",
+      repoFilters: "فیلترهای مخزن",
+    },
     nav: {
       materials: "منابع",
       projects: "پروژه‌ها",
@@ -272,7 +296,7 @@ const translations = {
       signalBuildText: "پروژه‌ها با مخزن عمومی",
     },
     status: {
-      title: "8 مخزن عمومی",
+      title: "۸ مخزن عمومی",
       text: "تکلیف‌ها، نوت‌بوک‌ها، قالب‌ها، مسئله‌ها، پیش‌آزمون، سورس ربات، سورس سایت و مستندات سازمان. آرشیو اسلایدها خصوصی است.",
       link: "سورس سایت",
     },
@@ -287,7 +311,7 @@ const translations = {
       notebooksText: "نوت‌بوک‌های شروع، جلسه‌ها، مسترکلاس، پروژه و پاسخ‌ها بررسی ساختار JSON را می‌گذرانند.",
       notebooksLink: "مشاهده نوت‌بوک‌ها",
       solutionsTitle: "گروه‌های پاسخ",
-      solutionsText: "تکلیف‌های 1 تا 7 پاسخ پایتون و پاسخ نوت‌بوکی همراه با اسکریپت بررسی محلی دارند.",
+      solutionsText: "تکلیف‌های ۱ تا ۷ پاسخ پایتون و پاسخ نوت‌بوکی همراه با اسکریپت بررسی محلی دارند.",
       solutionsLink: "مشاهده پاسخ‌ها",
       rebuiltTitle: "تکلیف‌های بازسازی شده",
       rebuiltText: "تکلیف‌های Numpy و Pandas اکنون سورس قابل ویرایش، پاسخ، بررسی و نوت‌بوک دارند.",
@@ -313,33 +337,33 @@ const translations = {
       repoLink: "مخزن پروژه",
       websiteLink: "وب‌سایت پروژه",
       one: {
-        number: "پروژه 1",
+        number: "پروژه ۱",
         name: "راوتن‌بات",
         owner: "توسعه‌دهنده: امیرحسین نوروزی",
         title: "دستیار آموزشی آناتومی",
         text: "راوتن‌بات تصویر آناتومی را دریافت می‌کند، بخش‌های قابل مشاهده را شماره‌گذاری می‌کند و نام هر بخش را به کاربر می‌گوید. دانشجو می‌تواند درباره هر بخش مشخص شده پرسش تکمیلی بپرسد.",
       },
       two: {
-        number: "پروژه 2",
+        number: "پروژه ۲",
         name: "مدکاردی",
         owner: "توسعه‌دهندگان: بنیامین ذوالفقاری و محمدحسین کاظمی",
         title: "مرور نمونه‌سوالات پزشکی",
         text: "مدکاردی به دانشجویان کمک می‌کند بسته‌های سوال بسازند، آزمون‌های قبلی را مرور کنند، پاسخ دقیق بگیرند و پیش از آزمون از فلش‌کارت‌های سریع استفاده کنند.",
       },
       three: {
-        number: "پروژه 3",
+        number: "پروژه ۳",
         owner: "توسعه‌دهنده: رضا حاجی قاسمی",
         title: "راهنمای غربالگری نوزاد",
         text: "NeoScreenBot داده‌های غربالگری نوزاد را با دستورالعمل رسمی وزارت بهداشت بررسی می‌کند و وضعیت طبیعی، نیاز به تکرار، نیاز به آزمایش تاییدی یا وضعیت اورژانسی را برمی‌گرداند.",
       },
       four: {
-        number: "پروژه 4",
+        number: "پروژه ۴",
         owner: "توسعه‌دهنده: محمد دهقان نیری",
         title: "ابزار بک‌تست استراتژی معاملاتی",
         text: "BackTestPro به کاربر اجازه می‌دهد بدون نوشتن کد، استراتژی معاملاتی خود را با داده‌های گذشته آزمایش کند و نتیجه را در زمان کوتاه بررسی کند.",
       },
       five: {
-        number: "پروژه 5",
+        number: "پروژه ۵",
         owner: "توسعه‌دهندگان: آلین اسماعیلی و الهه انسانی",
         title: "سامانه سلامت دیجیتال",
         text: "EurekaAI تحلیلگر علائم، دستیار صوتی و مدیریت کلینیک را کنار هم می‌آورد تا راهنمایی ساده پزشکی، دسترسی صوتی و مدیریت سبک بیماران و نوبت‌ها را پوشش دهد.",
@@ -349,17 +373,17 @@ const translations = {
       eyebrow: "گالری",
       title: "لحظه‌هایی از دوره",
       note: "عکس‌هایی از جلسه‌های AbzumsAI و روز پروژه‌ها.",
-      photo1: "عکس 1",
-      photo2: "عکس 2",
-      photo3: "عکس 3",
-      photo4: "عکس 4",
-      photo5: "عکس 5",
-      photo6: "عکس 6",
-      photo7: "عکس 7",
-      photo8: "عکس 8",
-      photo9: "عکس 9",
-      photo10: "عکس 10",
-      photo11: "عکس 11",
+      photo1: "عکس ۱",
+      photo2: "عکس ۲",
+      photo3: "عکس ۳",
+      photo4: "عکس ۴",
+      photo5: "عکس ۵",
+      photo6: "عکس ۶",
+      photo7: "عکس ۷",
+      photo8: "عکس ۸",
+      photo9: "عکس ۹",
+      photo10: "عکس ۱۰",
+      photo11: "عکس ۱۱",
     },
     teachers: {
       eyebrow: "تیم آموزش",
@@ -393,14 +417,14 @@ const translations = {
         one: "دانشجوی مهندسی کامپیوتر در دانشگاه صنعتی شریف",
         two: "دستیار آموزشی برنامه‌نویسی در چندین درس دانشکده مهندسی کامپیوتر شریف",
         three: "پژوهشگر هوش مصنوعی در NeurAILogic",
-        four: "رتبه 13 کنکور ریاضی",
+        four: "رتبه ۱۳ کنکور ریاضی",
       },
       sina: {
         name: "سینا مرادی",
         one: "دانشجوی پزشکی دانشگاه علوم پزشکی البرز",
         two: "برنامه‌نویس و پژوهشگر هوش مصنوعی در رادیولوژی",
-        three: "مدرس سابق ریاضی در مدارس علامه حلی 8 و 5 تهران",
-        four: "فناور برتر استان در سال 1403",
+        three: "مدرس سابق ریاضی در مدارس علامه حلی ۸ و ۵ تهران",
+        four: "فناور برتر استان در سال ۱۴۰۳",
       },
       negar: {
         name: "نگار باباشاه",
@@ -428,13 +452,13 @@ const translations = {
         name: "شایان صالحی",
         one: "پژوهشگر هوش مصنوعی در Imperial College لندن",
         two: "فارغ‌التحصیل کارشناسی مهندسی کامپیوتر از دانشگاه صنعتی شریف",
-        three: "رتبه 25 کنکور ریاضی",
+        three: "رتبه ۲۵ کنکور ریاضی",
       },
       kowsar: {
         name: "کوثر شمس",
         one: "دانشجوی کارشناسی ارشد هوش مصنوعی در دانشگاه تهران",
         two: "پژوهشگر هوش مصنوعی در پژوهشکده سلول‌های بنیادی رویان",
-        three: "رتبه 16 کنکور کارشناسی ارشد",
+        three: "رتبه ۱۶ کنکور کارشناسی ارشد",
       },
     },
     videos: {
@@ -443,17 +467,17 @@ const translations = {
       note: "سه ویدیو از بخش اول دوره در تلگرام به صورت عمومی منتشر شده است.",
       watch: "مشاهده در تلگرام",
       one: {
-        kicker: "بخش اول، جلسه 1",
+        kicker: "بخش اول، جلسه ۱",
         title: "فلسفه تکنولوژی و برنامه‌نویسی در عصر هوش مصنوعی",
         text: "با حضور دکتر محمدعلی آبام، همراه با انتقال تجربه پژوهشگران و فعالان هوش مصنوعی از دانشگاه صنعتی شریف.",
       },
       two: {
-        kicker: "بخش اول، جلسه 2",
+        kicker: "بخش اول، جلسه ۲",
         title: "استارتاپ‌های سلامت دیجیتال در عصر هوش مصنوعی",
         text: "با حضور مونا اعظمی، دکتر فرید فرجی و دکتر آذین اعتمادی منش، همراه با پرسش و پاسخ.",
       },
       three: {
-        kicker: "بخش اول، جلسه 3",
+        kicker: "بخش اول، جلسه ۳",
         title: "مسیر ورود دانشجویان علوم پزشکی به هوش مصنوعی",
         text: "جلسه انتقال تجربه با دکتر معین شریعت نیا، دانشجوی پزشکی دانشگاه علوم پزشکی تهران و فعال حوزه هوش مصنوعی.",
       },
@@ -501,6 +525,7 @@ const repoCount = document.querySelector(".repo-count");
 const repoSearch = document.querySelector("#repo-search");
 const emptyState = document.querySelector(".empty-state");
 const languageButtons = document.querySelectorAll("[data-language-button]");
+const numberElements = document.querySelectorAll("[data-number-en][data-number-fa]");
 let activeFilter = "all";
 let activeLanguage = getStoredLanguage();
 
@@ -532,6 +557,11 @@ function applyTemplate(template, values) {
   );
 }
 
+function formatNumber(value) {
+  if (activeLanguage !== "fa") return String(value);
+  return new Intl.NumberFormat("fa-IR", { useGrouping: false }).format(value);
+}
+
 function applyLanguage(language) {
   activeLanguage = language;
   const isPersian = language === "fa";
@@ -555,6 +585,14 @@ function applyLanguage(language) {
 
   document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
     element.setAttribute("alt", t(element.dataset.i18nAlt));
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    element.setAttribute("aria-label", t(element.dataset.i18nAriaLabel));
+  });
+
+  numberElements.forEach((element) => {
+    element.textContent = isPersian ? element.dataset.numberFa : element.dataset.numberEn;
   });
 
   languageButtons.forEach((button) => {
@@ -588,10 +626,10 @@ function updateRepos() {
   });
 
   if (activeFilter === "all") {
-    repoCount.textContent = applyTemplate(t("repos.showingAll"), { count: visibleCount });
+    repoCount.textContent = applyTemplate(t("repos.showingAll"), { count: formatNumber(visibleCount) });
   } else {
     repoCount.textContent = applyTemplate(t("repos.showingFiltered"), {
-      count: visibleCount,
+      count: formatNumber(visibleCount),
       filter: t(`repos.labels.${activeFilter}`),
     });
   }

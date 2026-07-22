@@ -11,17 +11,20 @@
     <title>AbzumsAI</title>
     <link rel="icon" href="assets/abzumsai-logo.png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <a class="skip-link" href="#materials" data-i18n="skip">Skip to content</a>
-    <header class="site-header" aria-label="Site header">
-      <a class="brand" href="#top" aria-label="AbzumsAI home">
+    <header class="site-header" aria-label="Site header" data-i18n-aria-label="labels.siteHeader">
+      <a class="brand" href="#top" aria-label="AbzumsAI home" data-i18n-aria-label="labels.home">
         <img src="assets/abzumsai-logo.png" alt="" width="40" height="40">
         <span>AbzumsAI</span>
       </a>
       <div class="header-actions">
-        <nav aria-label="Main links">
+        <nav aria-label="Main links" data-i18n-aria-label="labels.mainLinks">
           <a href="#materials" data-i18n="nav.materials">Materials</a>
           <a href="#projects" data-i18n="nav.projects">Projects</a>
           <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
@@ -30,7 +33,7 @@
           <a href="#repos" data-i18n="nav.repos">Repos</a>
           <a href="https://t.me/AbzumsAI" data-i18n="nav.telegram">Telegram</a>
         </nav>
-        <div class="language-switch" aria-label="Language">
+        <div class="language-switch" aria-label="Language" data-i18n-aria-label="labels.language">
           <button class="language-button active" type="button" data-language-button="en" aria-pressed="true">EN</button>
           <button class="language-button" type="button" data-language-button="fa" aria-pressed="false">FA</button>
         </div>
@@ -45,11 +48,11 @@
           <p class="hero-copy" data-i18n="hero.copy">
             A public home for the course run by the Research and Technology Department of Alborz University of Medical Sciences with MedX Community.
           </p>
-          <div class="hero-actions" aria-label="Primary links">
+          <div class="hero-actions" aria-label="Primary links" data-i18n-aria-label="labels.primaryLinks">
             <a class="button primary" href="https://github.com/AbzumsAI" data-i18n="hero.github">Open GitHub</a>
             <a class="button secondary" href="https://t.me/AbzumsAI" data-i18n="hero.telegram">Join Telegram</a>
           </div>
-          <dl class="signals" aria-label="Course signals">
+          <dl class="signals" aria-label="Course signals" data-i18n-aria-label="labels.courseSignals">
             <div>
               <dt data-i18n="hero.signalStudyTitle">Study</dt>
               <dd data-i18n="hero.signalStudyText">Notebooks and handouts</dd>
@@ -66,7 +69,7 @@
         </div>
       </section>
 
-      <section class="status-strip" aria-label="Site status">
+      <section class="status-strip" aria-label="Site status" data-i18n-aria-label="labels.siteStatus">
         <div>
           <strong data-i18n="status.title">8 public repos</strong>
           <span data-i18n="status.text">Assignments, notebooks, templates, problems, pretest files, bot source, site source, and organization docs. The slide archive is private.</span>
@@ -82,33 +85,33 @@
           </div>
           <a class="text-link" href="https://github.com/orgs/AbzumsAI/repositories" data-i18n="materials.allRepos">All public repos</a>
         </div>
-        <div class="material-grid" aria-label="Material counts">
+        <div class="material-grid" aria-label="Material counts" data-i18n-aria-label="labels.materialCounts">
           <article class="metric-card">
-            <strong>59</strong>
+            <strong data-number-en="59" data-number-fa="۵۹">59</strong>
             <h3 data-i18n="materials.slidesTitle">Private slide files</h3>
             <p data-i18n="materials.slidesText">Course slides and workshop files are kept in the private Slides repo for course staff.</p>
             <span class="card-note" data-i18n="materials.privateNote">No public repo link</span>
           </article>
           <article class="metric-card">
-            <strong>20</strong>
+            <strong data-number-en="20" data-number-fa="۲۰">20</strong>
             <h3 data-i18n="materials.notebooksTitle">Checked notebooks</h3>
             <p data-i18n="materials.notebooksText">Starter, session, masterclass, project, and answer notebooks pass the JSON check.</p>
             <a href="https://github.com/AbzumsAI/Notebooks" data-i18n="materials.notebooksLink">Open notebooks</a>
           </article>
           <article class="metric-card">
-            <strong>7</strong>
+            <strong data-number-en="7" data-number-fa="۷">7</strong>
             <h3 data-i18n="materials.solutionsTitle">Solution groups</h3>
             <p data-i18n="materials.solutionsText">Assignments 1 to 7 have Python answers and notebook answers with a local test script.</p>
             <a href="https://github.com/AbzumsAI/Notebooks/tree/main/solutions" data-i18n="materials.solutionsLink">Open answers</a>
           </article>
           <article class="metric-card">
-            <strong>2</strong>
+            <strong data-number-en="2" data-number-fa="۲">2</strong>
             <h3 data-i18n="materials.rebuiltTitle">Rebuilt tasks</h3>
             <p data-i18n="materials.rebuiltText">The Numpy and Pandas PDF tasks now have editable sources, solutions, checks, and notebooks.</p>
             <a href="https://github.com/AbzumsAI/Assignments" data-i18n="materials.assignmentsLink">Open assignments</a>
           </article>
           <article class="metric-card">
-            <strong>1</strong>
+            <strong data-number-en="1" data-number-fa="۱">1</strong>
             <h3 data-i18n="materials.datasetTitle">Final dataset</h3>
             <p data-i18n="materials.datasetText">The machine learning homework now has its handout, data dictionary, CSV data, and starter check.</p>
             <a href="https://github.com/AbzumsAI/Assignments/tree/main/MachineLearningHomework" data-i18n="materials.datasetLink">Open dataset</a>
@@ -123,17 +126,17 @@
         </div>
         <div class="path-grid">
           <article>
-            <span class="step-mark">01</span>
+            <span class="step-mark" data-number-en="01" data-number-fa="۰۱">01</span>
             <h3 data-i18n="path.oneTitle">Start with the notebooks</h3>
             <p data-i18n="path.oneText">Use the notebook repo for Python practice, class tasks, and submission notes.</p>
           </article>
           <article>
-            <span class="step-mark">02</span>
+            <span class="step-mark" data-number-en="02" data-number-fa="۰۲">02</span>
             <h3 data-i18n="path.twoTitle">Solve the problem sets</h3>
             <p data-i18n="path.twoText">Work through assignments, pretest material, and small Python examples from class.</p>
           </article>
           <article>
-            <span class="step-mark">03</span>
+            <span class="step-mark" data-number-en="03" data-number-fa="۰۳">03</span>
             <h3 data-i18n="path.threeTitle">Keep the source clean</h3>
             <p data-i18n="path.threeText">Build PDFs from the LaTeX folders and keep handouts ready for each session.</p>
           </article>
@@ -217,7 +220,7 @@
           </div>
           <p class="section-note" data-i18n="gallery.note">Photos from AbzumsAI sessions and Projects Day.</p>
         </div>
-        <div class="gallery-grid" aria-label="Gallery photos">
+        <div class="gallery-grid" aria-label="Gallery photos" data-i18n-aria-label="labels.galleryPhotos">
           <figure>
             <img src="assets/gallery/gallery-01.jpg" alt="AbzumsAI gallery photo 1" width="1100" height="593" decoding="async">
             <figcaption data-i18n="gallery.photo1">Photo 1</figcaption>
@@ -446,7 +449,7 @@
             <p class="eyebrow" data-i18n="repos.eyebrow">Public repos</p>
             <h2 id="repos-title" data-i18n="repos.title">Course work in one place</h2>
           </div>
-          <div class="filters" aria-label="Repo filters">
+          <div class="filters" aria-label="Repo filters" data-i18n-aria-label="labels.repoFilters">
             <button class="filter-button active" type="button" data-filter="all" aria-pressed="true" data-i18n="repos.filterAll">All</button>
             <button class="filter-button" type="button" data-filter="course" aria-pressed="false" data-i18n="repos.filterCourse">Course</button>
             <button class="filter-button" type="button" data-filter="code" aria-pressed="false" data-i18n="repos.filterCode">Code</button>
@@ -456,7 +459,7 @@
 
         <div class="repo-tools">
           <label class="sr-only" for="repo-search" data-i18n="repos.searchLabel">Search repos</label>
-          <input id="repo-search" type="search" name="repo-search" placeholder="Search repos" autocomplete="off" data-i18n-placeholder="repos.searchPlaceholder">
+          <input id="repo-search" type="search" name="repo-search" placeholder="Search repos" autocomplete="off" dir="auto" data-i18n-placeholder="repos.searchPlaceholder">
           <p class="repo-count" aria-live="polite">Showing all repos</p>
         </div>
 
