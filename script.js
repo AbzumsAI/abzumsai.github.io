@@ -6,6 +6,8 @@ const emptyState = document.querySelector(".empty-state");
 let activeFilter = "all";
 
 function updateRepos() {
+  if (!repoSearch || !repoCount || !emptyState) return;
+
   const searchText = repoSearch.value.trim().toLowerCase();
   let visibleCount = 0;
 
@@ -37,6 +39,8 @@ filterButtons.forEach((button) => {
   button.addEventListener("click", () => setFilter(button.dataset.filter));
 });
 
-repoSearch.addEventListener("input", updateRepos);
+if (repoSearch) {
+  repoSearch.addEventListener("input", updateRepos);
+}
 
 updateRepos();

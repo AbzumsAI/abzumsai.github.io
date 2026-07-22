@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="AbzumsAI course material, code, slides, and question bot links.">
+    <meta name="description" content="AbzumsAI course material, student projects, teachers, gallery, and public video links.">
     <meta name="theme-color" content="#08090a">
     <meta property="og:title" content="AbzumsAI">
-    <meta property="og:description" content="Public home for AbzumsAI course material.">
+    <meta property="og:description" content="Public home for AbzumsAI course material and student work.">
     <meta property="og:image" content="assets/abzumsai-logo.png">
     <title>AbzumsAI</title>
     <link rel="icon" href="assets/abzumsai-logo.png">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <a class="skip-link" href="#repos">Skip to repos</a>
+    <a class="skip-link" href="#materials">Skip to content</a>
     <header class="site-header" aria-label="Site header">
       <a class="brand" href="#top" aria-label="AbzumsAI home">
         <img src="assets/abzumsai-logo.png" alt="" width="40" height="40">
@@ -22,8 +22,11 @@
       </a>
       <nav aria-label="Main links">
         <a href="#materials">Materials</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#teachers">Teachers</a>
+        <a href="#videos">Videos</a>
         <a href="#repos">Repos</a>
-        <a href="#path">Course path</a>
         <a href="https://t.me/AbzumsAI">Telegram</a>
       </nav>
     </header>
@@ -43,15 +46,15 @@
           <dl class="signals" aria-label="Course signals">
             <div>
               <dt>Study</dt>
-              <dd>Notebooks and slides</dd>
+              <dd>Notebooks and handouts</dd>
             </div>
             <div>
               <dt>Practice</dt>
               <dd>Assignments and problems</dd>
             </div>
             <div>
-              <dt>Ask</dt>
-              <dd>Telegram question bot</dd>
+              <dt>Build</dt>
+              <dd>Projects with public repos</dd>
             </div>
           </dl>
         </div>
@@ -59,8 +62,8 @@
 
       <section class="status-strip" aria-label="Site status">
         <div>
-          <strong>9 linked repos</strong>
-          <span>Assignments, notebooks, slides, templates, problems, pretest files, bot source, site source, and organization docs.</span>
+          <strong>8 public repos</strong>
+          <span>Assignments, notebooks, templates, problems, pretest files, bot source, site source, and organization docs. The slide archive is private.</span>
         </div>
         <a href="https://github.com/AbzumsAI/abzumsai.github.io">Site source</a>
       </section>
@@ -71,14 +74,14 @@
             <p class="eyebrow">Current material</p>
             <h2 id="materials-title">Recovered and checked</h2>
           </div>
-          <a class="text-link" href="https://github.com/orgs/AbzumsAI/repositories">All repos</a>
+          <a class="text-link" href="https://github.com/orgs/AbzumsAI/repositories">All public repos</a>
         </div>
         <div class="material-grid" aria-label="Material counts">
           <article class="metric-card">
             <strong>59</strong>
-            <h3>Slide files</h3>
-            <p>Course slides and guide files copied from the chat export, with a first page preview for every PDF.</p>
-            <a href="https://github.com/AbzumsAI/Slides">Open slides</a>
+            <h3>Private slide files</h3>
+            <p>Course slides and workshop files are kept in the private Slides repo for course staff.</p>
+            <span class="card-note">No public repo link</span>
           </article>
           <article class="metric-card">
             <strong>20</strong>
@@ -126,7 +129,277 @@
           <article>
             <span class="step-mark">03</span>
             <h3>Keep the source clean</h3>
-            <p>Build PDFs from the LaTeX folders and keep slides ready for each session.</p>
+            <p>Build PDFs from the LaTeX folders and keep handouts ready for each session.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section rtl-section" id="projects" lang="fa" dir="rtl" aria-labelledby="projects-title">
+        <div class="section-heading wide">
+          <div>
+            <p class="eyebrow">Featured student projects</p>
+            <h2 id="projects-title">پروژه‌های شرکت‌کنندگان</h2>
+          </div>
+          <p class="section-note">پروژه‌های پایانی بخش برنامه‌نویسی پایتون در Projects Day معرفی شدند.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-topline">
+              <span>پروژه شماره 1</span>
+              <strong>راوتن‌بات</strong>
+            </div>
+            <p class="project-owner">توسعه‌دهنده: آقای امیرحسین نوروزی</p>
+            <h3>دستیار آموزشی آناتومی</h3>
+            <p>راوتن‌بات تصویر آناتومی را دریافت می‌کند، بخش‌های مختلف را شماره‌گذاری می‌کند و نام هر بخش را به کاربر می‌گوید. کاربر می‌تواند درباره همان بخش‌ها پرسش بپرسد و پاسخ بگیرد.</p>
+            <a href="https://github.com/amirhoss2004/RavTan_project">مخزن پروژه</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>پروژه شماره 2</span>
+              <strong>مدکاردی</strong>
+            </div>
+            <p class="project-owner">توسعه‌دهندگان: آقایان بنیامین ذوالفقاری و محمدحسین کاظمی</p>
+            <h3>مرور نمونه‌سوالات پزشکی</h3>
+            <p>مدکاردی برای ساخت بسته‌های نمونه‌سوال، مرور سوالات دوره‌های قبل، دریافت پاسخ‌های دقیق، و استفاده از فلش‌کارت‌های مرور سریع طراحی شده است.</p>
+            <div class="card-links">
+              <a href="https://medcardy.com">وب‌سایت مدکاردی</a>
+              <a href="https://github.com/2-2-MedCardy/2.2.1-Website-MedCardy">مخزن پروژه</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>پروژه شماره 3</span>
+              <strong>NeoScreenBot</strong>
+            </div>
+            <p class="project-owner">توسعه‌دهنده: آقای رضا حاجی‌قاسمی</p>
+            <h3>راهنمای غربالگری نوزاد</h3>
+            <p>این ابزار نتایج غربالگری نوزاد را بر اساس دستورالعمل رسمی وزارت بهداشت بررسی می‌کند و وضعیت طبیعی، نیاز به تکرار، نیاز به آزمایش تاییدی، یا وضعیت اورژانسی را نشان می‌دهد.</p>
+            <a href="https://github.com/rezaHaj/Alborz_AI_project3rdphase_Reza_Hg">مخزن پروژه</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>پروژه شماره 4</span>
+              <strong>BackTestPro</strong>
+            </div>
+            <p class="project-owner">توسعه‌دهنده: آقای محمد دهقان‌نیری</p>
+            <h3>آزمایش استراتژی معاملاتی</h3>
+            <p>بک‌تست‌پرو به کاربر کمک می‌کند بدون نیاز به کدنویسی، استراتژی معاملاتی خود را با داده‌های گذشته آزمایش کند و نتیجه را سریع‌تر بررسی کند.</p>
+            <a href="https://github.com/dehghan1384/backtest">مخزن پروژه</a>
+          </article>
+
+          <article class="project-card featured-project">
+            <div class="project-topline">
+              <span>پروژه شماره 5</span>
+              <strong>EurekaAI</strong>
+            </div>
+            <p class="project-owner">توسعه‌دهندگان: خانم‌ها آلین اسماعیلی و الهه انسانی</p>
+            <h3>اکوسیستم سلامت دیجیتال</h3>
+            <p>یوریکا ای‌آی از تحلیلگر علائم، دستیار صوتی، و مدیریت کلینیک تشکیل شده است. هدف پروژه کمک به پاسخ‌های ساده پزشکی، دسترسی صوتی، و مدیریت سبک پرونده‌ها و نوبت‌هاست.</p>
+            <a href="https://github.com/alinesmaeili/Final-Project">مخزن پروژه</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading wide">
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2 id="gallery-title">Course moments</h2>
+          </div>
+          <p class="section-note">Photos from AbzumsAI sessions and Projects Day.</p>
+        </div>
+        <div class="gallery-grid" aria-label="Gallery photos">
+          <figure>
+            <img src="assets/gallery/gallery-01.jpg" alt="AbzumsAI gallery photo 1" width="1100" height="593" decoding="async">
+            <figcaption>Photo 1</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gallery/gallery-02.jpg" alt="AbzumsAI gallery photo 2" width="1100" height="751" decoding="async">
+            <figcaption>Photo 2</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gallery/gallery-03.jpg" alt="AbzumsAI gallery photo 3" width="1100" height="873" decoding="async">
+            <figcaption>Photo 3</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gallery/gallery-04.jpg" alt="AbzumsAI gallery photo 4" width="1100" height="591" decoding="async">
+            <figcaption>Photo 4</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gallery/gallery-05.jpg" alt="AbzumsAI gallery photo 5" width="1100" height="723" decoding="async">
+            <figcaption>Photo 5</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gallery/gallery-06.jpg" alt="AbzumsAI gallery photo 6" width="1100" height="792" decoding="async">
+            <figcaption>Photo 6</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gallery/gallery-07.jpg" alt="AbzumsAI gallery photo 7" width="900" height="900" decoding="async">
+            <figcaption>Photo 7</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gallery/gallery-08.jpg" alt="AbzumsAI gallery photo 8" width="1075" height="900" decoding="async">
+            <figcaption>Photo 8</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gallery/gallery-09.jpg" alt="AbzumsAI gallery photo 9" width="1100" height="619" decoding="async">
+            <figcaption>Photo 9</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gallery/gallery-10.jpg" alt="AbzumsAI gallery photo 10" width="1100" height="779" decoding="async">
+            <figcaption>Photo 10</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/gallery/gallery-11.jpg" alt="AbzumsAI gallery photo 11" width="1100" height="825" decoding="async">
+            <figcaption>Photo 11</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="teachers-section rtl-section" id="teachers" lang="fa" dir="rtl" aria-labelledby="teachers-title">
+        <div class="section-heading wide">
+          <div>
+            <p class="eyebrow">Teaching team</p>
+            <h2 id="teachers-title">مدرسان دوره</h2>
+          </div>
+          <p class="section-note">افرادی که در آموزش، انتقال تجربه، و مسیر علمی دوره نقش داشتند.</p>
+        </div>
+        <div class="teacher-grid">
+          <article class="teacher-card">
+            <img src="assets/instructors/iman-mohammadi.jpg" alt="ایمان محمدی" width="720" height="720" decoding="async">
+            <div>
+              <h3><a href="https://imanm02.github.io/">ایمان محمدی</a></h3>
+              <ul>
+                <li>لیسانس مهندسی کامپیوتر از <a href="https://www.sharif.ir/">دانشگاه شریف</a></li>
+                <li>پژوهشگر علوم کامپیوتر در <a href="https://web.unisa.it/en/university">University of Salerno</a></li>
+                <li>پژوهشگر علوم کامپیوتر در <a href="https://www.cuhk.edu.hk/">دانشگاه CUHK</a></li>
+                <li>مدال برنز المپیاد جهانی بلاکچین <a href="https://www.ibcol.org/">IBCOL</a></li>
+                <li>دستیار آموزشی در <a href="https://t.me/micromaster_sharif">دوره آموزشی Micromaster</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <img src="assets/instructors/ali-mohammadzadeh-shabestari.jpg" alt="علی محمدزاده شبستری" width="720" height="720" decoding="async">
+            <div>
+              <h3>علی محمدزاده شبستری</h3>
+              <ul>
+                <li>دانشجوی مهندسی کامپیوتر در <a href="https://www.sharif.ir/">دانشگاه شریف</a></li>
+                <li>سابقه چندین دوره دستیاری آموزشی برنامه‌نویسی در <a href="https://docs.ce.sharif.edu/">دانشکده کامپیوتر دانشگاه شریف</a></li>
+                <li>پژوهشگر هوش مصنوعی در <a href="https://neurailogic.com/">NeurAILogic</a></li>
+                <li>رتبه 13 کنکور ریاضی</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <img src="assets/instructors/sina-moradi.jpg" alt="سینا مرادی" width="720" height="720" decoding="async">
+            <div>
+              <h3>سینا مرادی</h3>
+              <ul>
+                <li>دانشجوی پزشکی دانشگاه علوم پزشکی البرز</li>
+                <li>برنامه‌نویس و پژوهشگر هوش مصنوعی در رادیولوژی</li>
+                <li>مدرس سابق ریاضی در مدارس علامه حلی 8 و 5 تهران</li>
+                <li>فناور برتر استان در سال 1403</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <img src="assets/instructors/negar-babashah.jpg" alt="نگار باباشاه" width="720" height="720" decoding="async">
+            <div>
+              <h3>نگار باباشاه</h3>
+              <ul>
+                <li>لیسانس مهندسی کامپیوتر از دانشگاه شریف</li>
+                <li>پژوهشگر الگوریتم در <a href="https://www.mpi-inf.mpg.de/home">موسسه Max Planck</a> آلمان</li>
+                <li>پژوهشگر الگوریتم در <a href="https://hkust.edu.hk/">دانشگاه HKUST</a></li>
+                <li>مهندس نرم‌افزار در <a href="https://tapsi.ir/">تپسی</a></li>
+                <li>مدرس سابق المپیاد ریاضی در مدارس سلام تهران</li>
+                <li>مدال طلای المپیاد ریاضی کشوری</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <img src="assets/instructors/mehdi-lotfian.jpg" alt="مهدی لطفیان" width="720" height="720" decoding="async">
+            <div>
+              <h3>مهدی لطفیان</h3>
+              <ul>
+                <li>لیسانس مهندسی کامپیوتر از دانشگاه شریف</li>
+                <li>پژوهشگر یادگیری ماشین در <a href="https://www.epfl.ch/en/">EPFL</a> سوییس</li>
+                <li>پژوهشگر علوم کامپیوتر در <a href="https://www.cuhk.edu.hk/">دانشگاه CUHK</a></li>
+                <li>پژوهشگر <a href="https://ist.ac.at/en/institute/">موسسه ISTA</a> اتریش</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <img src="assets/instructors/ehsan-khormali.jpg" alt="احسان خرمالی" width="720" height="720" decoding="async">
+            <div>
+              <h3>احسان خرمالی</h3>
+              <ul>
+                <li>پژوهشگر هوش مصنوعی و نوروساینس</li>
+                <li>دانشجوی سال ششم پزشکی</li>
+                <li>هم‌بنیان‌گذار <a href="https://t.me/Lets_CONNECT_fa">کانکت</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <img src="assets/instructors/shayan-salehi.jpg" alt="شایان صالحی" width="720" height="720" decoding="async">
+            <div>
+              <h3>شایان صالحی</h3>
+              <ul>
+                <li>پژوهشگر هوش مصنوعی در Imperial College لندن</li>
+                <li>فارغ‌التحصیل کارشناسی مهندسی کامپیوتر از دانشگاه شریف</li>
+                <li>رتبه 25 کنکور ریاضی</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <img src="assets/instructors/kowsar-shams.jpg" alt="کوثر شمس" width="720" height="720" decoding="async">
+            <div>
+              <h3>کوثر شمس</h3>
+              <ul>
+                <li>دانشجوی کارشناسی ارشد هوش مصنوعی در دانشگاه تهران</li>
+                <li>پژوهشگر هوش مصنوعی در پژوهشکده سلول‌های بنیادی رویان</li>
+                <li>رتبه 16 کنکور کارشناسی ارشد</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="videos-section rtl-section" id="videos" lang="fa" dir="rtl" aria-labelledby="videos-title">
+        <div class="section-heading wide">
+          <div>
+            <p class="eyebrow">Public videos</p>
+            <h2 id="videos-title">ویدیوهای عمومی</h2>
+          </div>
+          <p class="section-note">سه ویدیوی بخش اول دوره در تلگرام به صورت عمومی در دسترس هستند.</p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <span>جلسه 1 از بخش اول</span>
+            <h3>فلسفه تکنولوژی و برنامه‌نویسی در عصر هوش مصنوعی</h3>
+            <p>با حضور دکتر محمدعلی آبام، همراه با انتقال تجربه فعالان و پژوهشگران هوش مصنوعی از دانشگاه شریف.</p>
+            <a href="https://t.me/AbzumsAI/72">مشاهده در تلگرام</a>
+          </article>
+          <article class="video-card">
+            <span>جلسه 2 از بخش اول</span>
+            <h3>استارتاپ‌های سلامت دیجیتال در عصر هوش مصنوعی</h3>
+            <p>با حضور مهندس مونا اعظمی، دکتر فرید فرجی، و دکتر آذین اعتمادی‌منش، همراه با پرسش و پاسخ.</p>
+            <a href="https://t.me/AbzumsAI/75">مشاهده در تلگرام</a>
+          </article>
+          <article class="video-card">
+            <span>جلسه 3 از بخش اول</span>
+            <h3>مسیر ورود دانشجویان علوم پزشکی به هوش مصنوعی</h3>
+            <p>انتقال تجربه با دکتر معین شریعت‌نیا، دانشجوی پزشکی دانشگاه تهران و فعال حوزه هوش مصنوعی.</p>
+            <a href="https://t.me/AbzumsAI/45">مشاهده در تلگرام</a>
           </article>
         </div>
       </section>
@@ -181,12 +454,6 @@
             <h3>Latex</h3>
             <p>Homework template, shared course style, and build notes.</p>
             <a href="https://github.com/AbzumsAI/Latex">Open repo</a>
-          </article>
-          <article class="repo-card" data-kind="docs">
-            <span class="repo-kind">Docs</span>
-            <h3>Slides</h3>
-            <p>Recovered lecture slides, labels, previews, and slide workflow notes.</p>
-            <a href="https://github.com/AbzumsAI/Slides">Open repo</a>
           </article>
           <article class="repo-card" data-kind="code">
             <span class="repo-kind">Code</span>

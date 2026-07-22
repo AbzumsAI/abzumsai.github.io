@@ -123,13 +123,12 @@ input:focus-visible {
   padding: clamp(48px, 8vw, 96px) clamp(18px, 4vw, 64px);
   color: var(--white);
   background:
-    radial-gradient(circle at 22% 28%, rgba(22, 163, 148, 0.32), transparent 31%),
     linear-gradient(90deg, rgba(8, 9, 10, 0.98) 0%, rgba(8, 9, 10, 0.9) 42%, rgba(8, 9, 10, 0.68) 100%),
     url("assets/abzumsai-logo.png");
   background-color: var(--charcoal);
   background-repeat: no-repeat;
-  background-position: center, center, right 8vw center;
-  background-size: auto, auto, min(42vw, 480px);
+  background-position: center, right 8vw center;
+  background-size: auto, min(42vw, 480px);
 }
 
 .hero-inner {
@@ -217,6 +216,10 @@ input:focus-visible {
 
 .path-section,
 .material-section,
+.project-section,
+.gallery-section,
+.teachers-section,
+.videos-section,
 .repo-section {
   padding: clamp(52px, 8vw, 96px) clamp(18px, 4vw, 64px);
 }
@@ -271,6 +274,12 @@ input:focus-visible {
   font-size: clamp(2rem, 5vw, 4rem);
   line-height: 1;
   letter-spacing: 0;
+}
+
+.section-note {
+  max-width: 560px;
+  margin: 0;
+  color: var(--muted);
 }
 
 .text-link {
@@ -343,6 +352,13 @@ input:focus-visible {
   text-decoration: none;
 }
 
+.card-note {
+  margin-top: auto;
+  padding-top: 20px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
 .step-mark {
   display: inline-flex;
   width: 42px;
@@ -365,6 +381,232 @@ input:focus-visible {
 .repo-card p {
   margin: 0;
   color: var(--muted);
+}
+
+.rtl-section {
+  direction: rtl;
+}
+
+.rtl-section .eyebrow {
+  font-family: inherit;
+}
+
+.project-section {
+  background: var(--white);
+}
+
+.project-grid,
+.teacher-grid,
+.video-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-card,
+.teacher-card,
+.video-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.project-card {
+  display: flex;
+  min-height: 310px;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.featured-project {
+  grid-column: span 2;
+}
+
+.project-topline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--blue);
+  font-weight: 850;
+}
+
+.project-topline span {
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: rgba(49, 95, 186, 0.1);
+  font-size: 0.82rem;
+}
+
+.project-card h3,
+.teacher-card h3,
+.video-card h3 {
+  margin: 18px 0 10px;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.project-owner {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-weight: 750;
+}
+
+.project-card p,
+.teacher-card li,
+.video-card p {
+  color: var(--muted);
+}
+
+.project-card p,
+.video-card p {
+  margin: 0;
+}
+
+.project-card h3 + p,
+.video-card h3 + p {
+  margin-top: 0;
+}
+
+.project-card a,
+.teacher-card a,
+.video-card a {
+  color: var(--blue);
+  font-weight: 820;
+  text-decoration: none;
+}
+
+.project-card > a,
+.video-card a {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.gallery-section {
+  background: #f7f2ed;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  border: 1px solid rgba(21, 23, 25, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+}
+
+.gallery-grid figure:first-child,
+.gallery-grid figure:nth-child(4),
+.gallery-grid figure:nth-child(9) {
+  grid-column: span 2;
+}
+
+.gallery-grid figure:first-child img,
+.gallery-grid figure:nth-child(4) img,
+.gallery-grid figure:nth-child(9) img {
+  aspect-ratio: 16 / 9;
+}
+
+.gallery-grid figcaption {
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 720;
+}
+
+.teachers-section {
+  background: var(--paper);
+}
+
+.teacher-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.teacher-card {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 18px;
+  padding: 18px;
+}
+
+.teacher-card img {
+  width: 132px;
+  height: 132px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.teacher-card h3 {
+  margin-top: 0;
+}
+
+.teacher-card ul {
+  margin: 0;
+  padding: 0 20px 0 0;
+}
+
+.teacher-card li + li {
+  margin-top: 8px;
+}
+
+.videos-section {
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.videos-section .section-note,
+.videos-section .video-card p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.video-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.video-card {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: none;
+}
+
+.video-card span {
+  color: var(--amber);
+  font-weight: 850;
+}
+
+.video-card a {
+  color: var(--white);
 }
 
 .repo-section {
@@ -497,8 +739,22 @@ input:focus-visible {
 
 @media (max-width: 980px) {
   .hero {
-    background-size: auto, auto, 420px;
-    background-position: center, center, right -120px center;
+    background-size: auto, 420px;
+    background-position: center, right -120px center;
+  }
+
+  .project-grid,
+  .teacher-grid,
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-project {
+    grid-column: auto;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .repo-grid {
@@ -523,8 +779,8 @@ input:focus-visible {
 
   .hero {
     min-height: min(70svh, 760px);
-    background-position: center, center, center 24px;
-    background-size: auto, auto, 320px;
+    background-position: center, center 24px;
+    background-size: auto, 320px;
     padding-top: 148px;
   }
 
@@ -585,6 +841,17 @@ input:focus-visible {
   .metric-card {
     min-height: 210px;
   }
+
+  .teacher-card {
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .teacher-card img {
+    width: 96px;
+    height: 96px;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -613,6 +880,26 @@ input:focus-visible {
 
   .filter-button {
     flex: 1 1 120px;
+  }
+
+  .teacher-card {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid figure:first-child,
+  .gallery-grid figure:nth-child(4),
+  .gallery-grid figure:nth-child(9) {
+    grid-column: auto;
   }
 }
 
