@@ -11,4 +11,6 @@ Important links:
 - Recovered material counts for private slides, notebooks, solutions, rebuilt tasks, and the final dataset.
 - Featured student projects, gallery photos, teaching team cards, and public Telegram videos.
 
+The default page language is English. Persian stays available through the language switch and should use right to left page direction.
+
 When a new public repo appears, I add it to the repo grid and update the status band.

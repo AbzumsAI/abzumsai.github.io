@@ -30,6 +30,10 @@ body {
   overflow-x: clip;
 }
 
+html[dir="rtl"] body {
+  font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+}
+
 a {
   color: inherit;
 }
@@ -44,7 +48,7 @@ input:focus-visible {
 .skip-link {
   position: fixed;
   top: 12px;
-  left: 12px;
+  inset-inline-start: 12px;
   z-index: 20;
   transform: translateY(-160%);
   border-radius: 8px;
@@ -98,9 +102,15 @@ input:focus-visible {
   border-radius: 8px;
 }
 
+.brand span {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
 .site-header nav {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: clamp(12px, 3vw, 28px);
   color: var(--muted);
   font-size: 0.95rem;
@@ -116,6 +126,44 @@ input:focus-visible {
   color: var(--blue);
 }
 
+.header-actions {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 18px;
+}
+
+.language-switch {
+  display: inline-flex;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  direction: ltr;
+}
+
+.language-button {
+  min-width: 42px;
+  min-height: 36px;
+  border: 0;
+  padding: 0 10px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 850;
+}
+
+.language-button.active {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.language-button + .language-button {
+  border-left: 1px solid var(--line);
+}
+
 .hero {
   min-height: min(76svh, 760px);
   display: flex;
@@ -128,6 +176,16 @@ input:focus-visible {
   background-color: var(--charcoal);
   background-repeat: no-repeat;
   background-position: center, right 8vw center;
+  background-size: auto, min(42vw, 480px);
+}
+
+html[dir="rtl"] .hero {
+  background:
+    linear-gradient(270deg, rgba(8, 9, 10, 0.98) 0%, rgba(8, 9, 10, 0.9) 42%, rgba(8, 9, 10, 0.68) 100%),
+    url("assets/abzumsai-logo.png");
+  background-color: var(--charcoal);
+  background-repeat: no-repeat;
+  background-position: center, left 8vw center;
   background-size: auto, min(42vw, 480px);
 }
 
@@ -198,7 +256,7 @@ input:focus-visible {
 }
 
 .signals div {
-  border-left: 3px solid var(--amber);
+  border-inline-start: 3px solid var(--amber);
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 8px;
@@ -383,14 +441,6 @@ input:focus-visible {
   color: var(--muted);
 }
 
-.rtl-section {
-  direction: rtl;
-}
-
-.rtl-section .eyebrow {
-  font-family: inherit;
-}
-
 .project-section {
   background: var(--white);
 }
@@ -569,11 +619,29 @@ input:focus-visible {
 
 .teacher-card ul {
   margin: 0;
-  padding: 0 20px 0 0;
+  padding-block: 0;
+  padding-inline: 20px 0;
 }
 
 .teacher-card li + li {
   margin-top: 8px;
+}
+
+.teacher-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.teacher-links a {
+  border: 1px solid rgba(49, 95, 186, 0.18);
+  border-radius: 999px;
+  padding: 5px 10px;
+  background: rgba(49, 95, 186, 0.08);
+  font-size: 0.84rem;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
 .videos-section {
@@ -664,7 +732,7 @@ input:focus-visible {
   min-height: 24px;
   margin: 0;
   color: var(--muted);
-  text-align: right;
+  text-align: end;
 }
 
 .empty-state {
@@ -743,6 +811,11 @@ input:focus-visible {
     background-position: center, right -120px center;
   }
 
+  html[dir="rtl"] .hero {
+    background-position: center, left -120px center;
+    background-size: auto, 420px;
+  }
+
   .project-grid,
   .teacher-grid,
   .video-grid {
@@ -770,6 +843,13 @@ input:focus-visible {
     flex-direction: column;
   }
 
+  .header-actions {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .site-header nav {
     width: 100%;
     flex-wrap: wrap;
@@ -782,6 +862,11 @@ input:focus-visible {
     background-position: center, center 24px;
     background-size: auto, 320px;
     padding-top: 148px;
+  }
+
+  html[dir="rtl"] .hero {
+    background-position: center, center 24px;
+    background-size: auto, 320px;
   }
 
   .hero-inner {
@@ -826,7 +911,7 @@ input:focus-visible {
   }
 
   .repo-count {
-    text-align: left;
+    text-align: start;
   }
 
   .status-strip {
@@ -858,6 +943,10 @@ input:focus-visible {
   .site-header {
     gap: 14px;
     min-height: 0;
+  }
+
+  .header-actions {
+    gap: 10px;
   }
 
   .site-header nav {

@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="AbzumsAI course material, student projects, teachers, gallery, and public video links.">
+    <meta name="description" content="AbzumsAI course material, student projects, teaching team, gallery, and public video links.">
     <meta name="theme-color" content="#08090a">
     <meta property="og:title" content="AbzumsAI">
     <meta property="og:description" content="Public home for AbzumsAI course material and student work.">
@@ -14,47 +14,53 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <a class="skip-link" href="#materials">Skip to content</a>
+    <a class="skip-link" href="#materials" data-i18n="skip">Skip to content</a>
     <header class="site-header" aria-label="Site header">
       <a class="brand" href="#top" aria-label="AbzumsAI home">
         <img src="assets/abzumsai-logo.png" alt="" width="40" height="40">
         <span>AbzumsAI</span>
       </a>
-      <nav aria-label="Main links">
-        <a href="#materials">Materials</a>
-        <a href="#projects">Projects</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#teachers">Teachers</a>
-        <a href="#videos">Videos</a>
-        <a href="#repos">Repos</a>
-        <a href="https://t.me/AbzumsAI">Telegram</a>
-      </nav>
+      <div class="header-actions">
+        <nav aria-label="Main links">
+          <a href="#materials" data-i18n="nav.materials">Materials</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+          <a href="#teachers" data-i18n="nav.teachers">Teachers</a>
+          <a href="#videos" data-i18n="nav.videos">Videos</a>
+          <a href="#repos" data-i18n="nav.repos">Repos</a>
+          <a href="https://t.me/AbzumsAI" data-i18n="nav.telegram">Telegram</a>
+        </nav>
+        <div class="language-switch" aria-label="Language">
+          <button class="language-button active" type="button" data-language-button="en" aria-pressed="true">EN</button>
+          <button class="language-button" type="button" data-language-button="fa" aria-pressed="false">FA</button>
+        </div>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-inner">
-          <p class="eyebrow">AI course material for healthcare students</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">AI course material for healthcare students</p>
           <h1 id="hero-title">AbzumsAI</h1>
-          <p class="hero-copy">
+          <p class="hero-copy" data-i18n="hero.copy">
             A public home for the course run by the Research and Technology Department of Alborz University of Medical Sciences with MedX Community.
           </p>
           <div class="hero-actions" aria-label="Primary links">
-            <a class="button primary" href="https://github.com/AbzumsAI">Open GitHub</a>
-            <a class="button secondary" href="https://t.me/AbzumsAI">Join Telegram</a>
+            <a class="button primary" href="https://github.com/AbzumsAI" data-i18n="hero.github">Open GitHub</a>
+            <a class="button secondary" href="https://t.me/AbzumsAI" data-i18n="hero.telegram">Join Telegram</a>
           </div>
           <dl class="signals" aria-label="Course signals">
             <div>
-              <dt>Study</dt>
-              <dd>Notebooks and handouts</dd>
+              <dt data-i18n="hero.signalStudyTitle">Study</dt>
+              <dd data-i18n="hero.signalStudyText">Notebooks and handouts</dd>
             </div>
             <div>
-              <dt>Practice</dt>
-              <dd>Assignments and problems</dd>
+              <dt data-i18n="hero.signalPracticeTitle">Practice</dt>
+              <dd data-i18n="hero.signalPracticeText">Assignments and problems</dd>
             </div>
             <div>
-              <dt>Build</dt>
-              <dd>Projects with public repos</dd>
+              <dt data-i18n="hero.signalBuildTitle">Build</dt>
+              <dd data-i18n="hero.signalBuildText">Projects with public repos</dd>
             </div>
           </dl>
         </div>
@@ -62,143 +68,143 @@
 
       <section class="status-strip" aria-label="Site status">
         <div>
-          <strong>8 public repos</strong>
-          <span>Assignments, notebooks, templates, problems, pretest files, bot source, site source, and organization docs. The slide archive is private.</span>
+          <strong data-i18n="status.title">8 public repos</strong>
+          <span data-i18n="status.text">Assignments, notebooks, templates, problems, pretest files, bot source, site source, and organization docs. The slide archive is private.</span>
         </div>
-        <a href="https://github.com/AbzumsAI/abzumsai.github.io">Site source</a>
+        <a href="https://github.com/AbzumsAI/abzumsai.github.io" data-i18n="status.link">Site source</a>
       </section>
 
       <section class="material-section" id="materials" aria-labelledby="materials-title">
         <div class="section-heading wide">
           <div>
-            <p class="eyebrow">Current material</p>
-            <h2 id="materials-title">Recovered and checked</h2>
+            <p class="eyebrow" data-i18n="materials.eyebrow">Current material</p>
+            <h2 id="materials-title" data-i18n="materials.title">Recovered and checked</h2>
           </div>
-          <a class="text-link" href="https://github.com/orgs/AbzumsAI/repositories">All public repos</a>
+          <a class="text-link" href="https://github.com/orgs/AbzumsAI/repositories" data-i18n="materials.allRepos">All public repos</a>
         </div>
         <div class="material-grid" aria-label="Material counts">
           <article class="metric-card">
             <strong>59</strong>
-            <h3>Private slide files</h3>
-            <p>Course slides and workshop files are kept in the private Slides repo for course staff.</p>
-            <span class="card-note">No public repo link</span>
+            <h3 data-i18n="materials.slidesTitle">Private slide files</h3>
+            <p data-i18n="materials.slidesText">Course slides and workshop files are kept in the private Slides repo for course staff.</p>
+            <span class="card-note" data-i18n="materials.privateNote">No public repo link</span>
           </article>
           <article class="metric-card">
             <strong>20</strong>
-            <h3>Checked notebooks</h3>
-            <p>Starter, session, masterclass, project, and answer notebooks pass the JSON check.</p>
-            <a href="https://github.com/AbzumsAI/Notebooks">Open notebooks</a>
+            <h3 data-i18n="materials.notebooksTitle">Checked notebooks</h3>
+            <p data-i18n="materials.notebooksText">Starter, session, masterclass, project, and answer notebooks pass the JSON check.</p>
+            <a href="https://github.com/AbzumsAI/Notebooks" data-i18n="materials.notebooksLink">Open notebooks</a>
           </article>
           <article class="metric-card">
             <strong>7</strong>
-            <h3>Solution groups</h3>
-            <p>Assignments 1 to 7 have Python answers and notebook answers with a local test script.</p>
-            <a href="https://github.com/AbzumsAI/Notebooks/tree/main/solutions">Open answers</a>
+            <h3 data-i18n="materials.solutionsTitle">Solution groups</h3>
+            <p data-i18n="materials.solutionsText">Assignments 1 to 7 have Python answers and notebook answers with a local test script.</p>
+            <a href="https://github.com/AbzumsAI/Notebooks/tree/main/solutions" data-i18n="materials.solutionsLink">Open answers</a>
           </article>
           <article class="metric-card">
             <strong>2</strong>
-            <h3>Rebuilt tasks</h3>
-            <p>The Numpy and Pandas PDF tasks now have editable sources, solutions, checks, and notebooks.</p>
-            <a href="https://github.com/AbzumsAI/Assignments">Open assignments</a>
+            <h3 data-i18n="materials.rebuiltTitle">Rebuilt tasks</h3>
+            <p data-i18n="materials.rebuiltText">The Numpy and Pandas PDF tasks now have editable sources, solutions, checks, and notebooks.</p>
+            <a href="https://github.com/AbzumsAI/Assignments" data-i18n="materials.assignmentsLink">Open assignments</a>
           </article>
           <article class="metric-card">
             <strong>1</strong>
-            <h3>Final dataset</h3>
-            <p>The machine learning homework now has its handout, data dictionary, CSV data, and starter check.</p>
-            <a href="https://github.com/AbzumsAI/Assignments/tree/main/MachineLearningHomework">Open dataset</a>
+            <h3 data-i18n="materials.datasetTitle">Final dataset</h3>
+            <p data-i18n="materials.datasetText">The machine learning homework now has its handout, data dictionary, CSV data, and starter check.</p>
+            <a href="https://github.com/AbzumsAI/Assignments/tree/main/MachineLearningHomework" data-i18n="materials.datasetLink">Open dataset</a>
           </article>
         </div>
       </section>
 
       <section class="path-section" id="path" aria-labelledby="path-title">
         <div class="section-heading">
-          <p class="eyebrow">Course path</p>
-          <h2 id="path-title">From math to machine learning</h2>
+          <p class="eyebrow" data-i18n="path.eyebrow">Course path</p>
+          <h2 id="path-title" data-i18n="path.title">From math to machine learning</h2>
         </div>
         <div class="path-grid">
           <article>
             <span class="step-mark">01</span>
-            <h3>Start with the notebooks</h3>
-            <p>Use the notebook repo for Python practice, class tasks, and submission notes.</p>
+            <h3 data-i18n="path.oneTitle">Start with the notebooks</h3>
+            <p data-i18n="path.oneText">Use the notebook repo for Python practice, class tasks, and submission notes.</p>
           </article>
           <article>
             <span class="step-mark">02</span>
-            <h3>Solve the problem sets</h3>
-            <p>Work through assignments, pretest material, and small Python examples from class.</p>
+            <h3 data-i18n="path.twoTitle">Solve the problem sets</h3>
+            <p data-i18n="path.twoText">Work through assignments, pretest material, and small Python examples from class.</p>
           </article>
           <article>
             <span class="step-mark">03</span>
-            <h3>Keep the source clean</h3>
-            <p>Build PDFs from the LaTeX folders and keep handouts ready for each session.</p>
+            <h3 data-i18n="path.threeTitle">Keep the source clean</h3>
+            <p data-i18n="path.threeText">Build PDFs from the LaTeX folders and keep handouts ready for each session.</p>
           </article>
         </div>
       </section>
 
-      <section class="project-section rtl-section" id="projects" lang="fa" dir="rtl" aria-labelledby="projects-title">
+      <section class="project-section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading wide">
           <div>
-            <p class="eyebrow">Featured student projects</p>
-            <h2 id="projects-title">پروژه‌های شرکت‌کنندگان</h2>
+            <p class="eyebrow" data-i18n="projects.eyebrow">Featured student projects</p>
+            <h2 id="projects-title" data-i18n="projects.title">Student projects</h2>
           </div>
-          <p class="section-note">پروژه‌های پایانی بخش برنامه‌نویسی پایتون در Projects Day معرفی شدند.</p>
+          <p class="section-note" data-i18n="projects.note">Final projects from the Python programming section, presented at Projects Day.</p>
         </div>
         <div class="project-grid">
           <article class="project-card">
             <div class="project-topline">
-              <span>پروژه شماره 1</span>
-              <strong>راوتن‌بات</strong>
+              <span data-i18n="projects.one.number">Project 1</span>
+              <strong data-i18n="projects.one.name">RavTan Bot</strong>
             </div>
-            <p class="project-owner">توسعه‌دهنده: آقای امیرحسین نوروزی</p>
-            <h3>دستیار آموزشی آناتومی</h3>
-            <p>راوتن‌بات تصویر آناتومی را دریافت می‌کند، بخش‌های مختلف را شماره‌گذاری می‌کند و نام هر بخش را به کاربر می‌گوید. کاربر می‌تواند درباره همان بخش‌ها پرسش بپرسد و پاسخ بگیرد.</p>
-            <a href="https://github.com/amirhoss2004/RavTan_project">مخزن پروژه</a>
+            <p class="project-owner" data-i18n="projects.one.owner">Developer: Amirhossein Norouzi</p>
+            <h3 data-i18n="projects.one.title">Anatomy learning assistant</h3>
+            <p data-i18n="projects.one.text">RavTan Bot receives anatomy images, numbers the visible parts, and names each part for the user. Students can also ask follow-up questions about each labeled area.</p>
+            <a href="https://github.com/amirhoss2004/RavTan_project" data-i18n="projects.repoLink">Project repo</a>
           </article>
 
           <article class="project-card">
             <div class="project-topline">
-              <span>پروژه شماره 2</span>
-              <strong>مدکاردی</strong>
+              <span data-i18n="projects.two.number">Project 2</span>
+              <strong data-i18n="projects.two.name">MedCardy</strong>
             </div>
-            <p class="project-owner">توسعه‌دهندگان: آقایان بنیامین ذوالفقاری و محمدحسین کاظمی</p>
-            <h3>مرور نمونه‌سوالات پزشکی</h3>
-            <p>مدکاردی برای ساخت بسته‌های نمونه‌سوال، مرور سوالات دوره‌های قبل، دریافت پاسخ‌های دقیق، و استفاده از فلش‌کارت‌های مرور سریع طراحی شده است.</p>
+            <p class="project-owner" data-i18n="projects.two.owner">Developers: Benjamin Zolfaghari and Mohammad Hossein Kazemi</p>
+            <h3 data-i18n="projects.two.title">Medical exam question review</h3>
+            <p data-i18n="projects.two.text">MedCardy helps students create question packs, review previous exams, receive precise answers, and use quick flashcards before exams.</p>
             <div class="card-links">
-              <a href="https://medcardy.com">وب‌سایت مدکاردی</a>
-              <a href="https://github.com/2-2-MedCardy/2.2.1-Website-MedCardy">مخزن پروژه</a>
+              <a href="https://medcardy.com" data-i18n="projects.websiteLink">Project website</a>
+              <a href="https://github.com/2-2-MedCardy/2.2.1-Website-MedCardy" data-i18n="projects.repoLink">Project repo</a>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-topline">
-              <span>پروژه شماره 3</span>
+              <span data-i18n="projects.three.number">Project 3</span>
               <strong>NeoScreenBot</strong>
             </div>
-            <p class="project-owner">توسعه‌دهنده: آقای رضا حاجی‌قاسمی</p>
-            <h3>راهنمای غربالگری نوزاد</h3>
-            <p>این ابزار نتایج غربالگری نوزاد را بر اساس دستورالعمل رسمی وزارت بهداشت بررسی می‌کند و وضعیت طبیعی، نیاز به تکرار، نیاز به آزمایش تاییدی، یا وضعیت اورژانسی را نشان می‌دهد.</p>
-            <a href="https://github.com/rezaHaj/Alborz_AI_project3rdphase_Reza_Hg">مخزن پروژه</a>
+            <p class="project-owner" data-i18n="projects.three.owner">Developer: Reza Haji Ghasemi</p>
+            <h3 data-i18n="projects.three.title">Newborn screening guide</h3>
+            <p data-i18n="projects.three.text">NeoScreenBot checks newborn screening data against the official health ministry guide and returns normal, repeat, confirmatory test, or urgent status.</p>
+            <a href="https://github.com/rezaHaj/Alborz_AI_project3rdphase_Reza_Hg" data-i18n="projects.repoLink">Project repo</a>
           </article>
 
           <article class="project-card">
             <div class="project-topline">
-              <span>پروژه شماره 4</span>
+              <span data-i18n="projects.four.number">Project 4</span>
               <strong>BackTestPro</strong>
             </div>
-            <p class="project-owner">توسعه‌دهنده: آقای محمد دهقان‌نیری</p>
-            <h3>آزمایش استراتژی معاملاتی</h3>
-            <p>بک‌تست‌پرو به کاربر کمک می‌کند بدون نیاز به کدنویسی، استراتژی معاملاتی خود را با داده‌های گذشته آزمایش کند و نتیجه را سریع‌تر بررسی کند.</p>
-            <a href="https://github.com/dehghan1384/backtest">مخزن پروژه</a>
+            <p class="project-owner" data-i18n="projects.four.owner">Developer: Mohammad Dehghan Niri</p>
+            <h3 data-i18n="projects.four.title">Trading strategy backtest tool</h3>
+            <p data-i18n="projects.four.text">BackTestPro lets users test trading strategies against past data without writing code, then review the results in a short time.</p>
+            <a href="https://github.com/dehghan1384/backtest" data-i18n="projects.repoLink">Project repo</a>
           </article>
 
           <article class="project-card featured-project">
             <div class="project-topline">
-              <span>پروژه شماره 5</span>
+              <span data-i18n="projects.five.number">Project 5</span>
               <strong>EurekaAI</strong>
             </div>
-            <p class="project-owner">توسعه‌دهندگان: خانم‌ها آلین اسماعیلی و الهه انسانی</p>
-            <h3>اکوسیستم سلامت دیجیتال</h3>
-            <p>یوریکا ای‌آی از تحلیلگر علائم، دستیار صوتی، و مدیریت کلینیک تشکیل شده است. هدف پروژه کمک به پاسخ‌های ساده پزشکی، دسترسی صوتی، و مدیریت سبک پرونده‌ها و نوبت‌هاست.</p>
-            <a href="https://github.com/alinesmaeili/Final-Project">مخزن پروژه</a>
+            <p class="project-owner" data-i18n="projects.five.owner">Developers: Aline Esmaeili and Elahe Ensani</p>
+            <h3 data-i18n="projects.five.title">Digital health system</h3>
+            <p data-i18n="projects.five.text">EurekaAI combines a symptom analyzer, a voice assistant, and a clinic management system for simple medical guidance, voice access, and light patient and appointment management.</p>
+            <a href="https://github.com/alinesmaeili/Final-Project" data-i18n="projects.repoLink">Project repo</a>
           </article>
         </div>
       </section>
@@ -206,200 +212,230 @@
       <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
         <div class="section-heading wide">
           <div>
-            <p class="eyebrow">Gallery</p>
-            <h2 id="gallery-title">Course moments</h2>
+            <p class="eyebrow" data-i18n="gallery.eyebrow">Gallery</p>
+            <h2 id="gallery-title" data-i18n="gallery.title">Course moments</h2>
           </div>
-          <p class="section-note">Photos from AbzumsAI sessions and Projects Day.</p>
+          <p class="section-note" data-i18n="gallery.note">Photos from AbzumsAI sessions and Projects Day.</p>
         </div>
         <div class="gallery-grid" aria-label="Gallery photos">
           <figure>
             <img src="assets/gallery/gallery-01.jpg" alt="AbzumsAI gallery photo 1" width="1100" height="593" decoding="async">
-            <figcaption>Photo 1</figcaption>
+            <figcaption data-i18n="gallery.photo1">Photo 1</figcaption>
           </figure>
           <figure>
             <img src="assets/gallery/gallery-02.jpg" alt="AbzumsAI gallery photo 2" width="1100" height="751" decoding="async">
-            <figcaption>Photo 2</figcaption>
+            <figcaption data-i18n="gallery.photo2">Photo 2</figcaption>
           </figure>
           <figure>
             <img src="assets/gallery/gallery-03.jpg" alt="AbzumsAI gallery photo 3" width="1100" height="873" decoding="async">
-            <figcaption>Photo 3</figcaption>
+            <figcaption data-i18n="gallery.photo3">Photo 3</figcaption>
           </figure>
           <figure>
             <img src="assets/gallery/gallery-04.jpg" alt="AbzumsAI gallery photo 4" width="1100" height="591" decoding="async">
-            <figcaption>Photo 4</figcaption>
+            <figcaption data-i18n="gallery.photo4">Photo 4</figcaption>
           </figure>
           <figure>
             <img src="assets/gallery/gallery-05.jpg" alt="AbzumsAI gallery photo 5" width="1100" height="723" decoding="async">
-            <figcaption>Photo 5</figcaption>
+            <figcaption data-i18n="gallery.photo5">Photo 5</figcaption>
           </figure>
           <figure>
             <img src="assets/gallery/gallery-06.jpg" alt="AbzumsAI gallery photo 6" width="1100" height="792" decoding="async">
-            <figcaption>Photo 6</figcaption>
+            <figcaption data-i18n="gallery.photo6">Photo 6</figcaption>
           </figure>
           <figure>
             <img src="assets/gallery/gallery-07.jpg" alt="AbzumsAI gallery photo 7" width="900" height="900" decoding="async">
-            <figcaption>Photo 7</figcaption>
+            <figcaption data-i18n="gallery.photo7">Photo 7</figcaption>
           </figure>
           <figure>
             <img src="assets/gallery/gallery-08.jpg" alt="AbzumsAI gallery photo 8" width="1075" height="900" decoding="async">
-            <figcaption>Photo 8</figcaption>
+            <figcaption data-i18n="gallery.photo8">Photo 8</figcaption>
           </figure>
           <figure>
             <img src="assets/gallery/gallery-09.jpg" alt="AbzumsAI gallery photo 9" width="1100" height="619" decoding="async">
-            <figcaption>Photo 9</figcaption>
+            <figcaption data-i18n="gallery.photo9">Photo 9</figcaption>
           </figure>
           <figure>
             <img src="assets/gallery/gallery-10.jpg" alt="AbzumsAI gallery photo 10" width="1100" height="779" decoding="async">
-            <figcaption>Photo 10</figcaption>
+            <figcaption data-i18n="gallery.photo10">Photo 10</figcaption>
           </figure>
           <figure>
             <img src="assets/gallery/gallery-11.jpg" alt="AbzumsAI gallery photo 11" width="1100" height="825" decoding="async">
-            <figcaption>Photo 11</figcaption>
+            <figcaption data-i18n="gallery.photo11">Photo 11</figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="teachers-section rtl-section" id="teachers" lang="fa" dir="rtl" aria-labelledby="teachers-title">
+      <section class="teachers-section" id="teachers" aria-labelledby="teachers-title">
         <div class="section-heading wide">
           <div>
-            <p class="eyebrow">Teaching team</p>
-            <h2 id="teachers-title">مدرسان دوره</h2>
+            <p class="eyebrow" data-i18n="teachers.eyebrow">Teaching team</p>
+            <h2 id="teachers-title" data-i18n="teachers.title">Teaching team</h2>
           </div>
-          <p class="section-note">افرادی که در آموزش، انتقال تجربه، و مسیر علمی دوره نقش داشتند.</p>
+          <p class="section-note" data-i18n="teachers.note">The people who taught, guided, and shared experience during the course.</p>
         </div>
         <div class="teacher-grid">
           <article class="teacher-card">
-            <img src="assets/instructors/iman-mohammadi.jpg" alt="ایمان محمدی" width="720" height="720" decoding="async">
+            <img src="assets/instructors/iman-mohammadi.jpg" alt="Iman Mohammadi" width="720" height="720" decoding="async" data-i18n-alt="teachers.iman.name">
             <div>
-              <h3><a href="https://imanm02.github.io/">ایمان محمدی</a></h3>
+              <h3><a href="https://imanm02.github.io/" data-i18n="teachers.iman.name">Iman Mohammadi</a></h3>
               <ul>
-                <li>لیسانس مهندسی کامپیوتر از <a href="https://www.sharif.ir/">دانشگاه شریف</a></li>
-                <li>پژوهشگر علوم کامپیوتر در <a href="https://web.unisa.it/en/university">University of Salerno</a></li>
-                <li>پژوهشگر علوم کامپیوتر در <a href="https://www.cuhk.edu.hk/">دانشگاه CUHK</a></li>
-                <li>مدال برنز المپیاد جهانی بلاکچین <a href="https://www.ibcol.org/">IBCOL</a></li>
-                <li>دستیار آموزشی در <a href="https://t.me/micromaster_sharif">دوره آموزشی Micromaster</a></li>
+                <li data-i18n="teachers.iman.one">BSc in Computer Engineering from Sharif University of Technology</li>
+                <li data-i18n="teachers.iman.two">Computer science researcher at University of Salerno</li>
+                <li data-i18n="teachers.iman.three">Computer science researcher at CUHK</li>
+                <li data-i18n="teachers.iman.four">Bronze medalist at the International Blockchain Olympiad</li>
+                <li data-i18n="teachers.iman.five">Teaching assistant in the Micromaster course</li>
+              </ul>
+              <div class="teacher-links">
+                <a href="https://www.sharif.ir/" data-i18n="teachers.links.sharif">Sharif University</a>
+                <a href="https://web.unisa.it/en/university" data-i18n="teachers.links.unisa">UNISA</a>
+                <a href="https://www.cuhk.edu.hk/" data-i18n="teachers.links.cuhk">CUHK</a>
+                <a href="https://www.ibcol.org/" data-i18n="teachers.links.ibcol">IBCOL</a>
+                <a href="https://t.me/micromaster_sharif" data-i18n="teachers.links.micromaster">Micromaster</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <img src="assets/instructors/ali-mohammadzadeh-shabestari.jpg" alt="Ali Mohammadzadeh Shabestari" width="720" height="720" decoding="async" data-i18n-alt="teachers.ali.name">
+            <div>
+              <h3 data-i18n="teachers.ali.name">Ali Mohammadzadeh Shabestari</h3>
+              <ul>
+                <li data-i18n="teachers.ali.one">Computer Engineering student at Sharif University of Technology</li>
+                <li data-i18n="teachers.ali.two">Programming teaching assistant for several courses at Sharif Computer Engineering Department</li>
+                <li data-i18n="teachers.ali.three">AI researcher at NeurAILogic</li>
+                <li data-i18n="teachers.ali.four">Rank 13 in the national mathematics entrance exam</li>
+              </ul>
+              <div class="teacher-links">
+                <a href="https://www.sharif.ir/" data-i18n="teachers.links.sharif">Sharif University</a>
+                <a href="https://docs.ce.sharif.edu/" data-i18n="teachers.links.ceSharif">Sharif CE</a>
+                <a href="https://neurailogic.com/" data-i18n="teachers.links.neurailogic">NeurAILogic</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <img src="assets/instructors/sina-moradi.jpg" alt="Sina Moradi" width="720" height="720" decoding="async" data-i18n-alt="teachers.sina.name">
+            <div>
+              <h3 data-i18n="teachers.sina.name">Sina Moradi</h3>
+              <ul>
+                <li data-i18n="teachers.sina.one">Medical student at Alborz University of Medical Sciences</li>
+                <li data-i18n="teachers.sina.two">Programmer and AI researcher in radiology</li>
+                <li data-i18n="teachers.sina.three">Former math teacher at Allameh Helli 8 and 5 schools in Tehran</li>
+                <li data-i18n="teachers.sina.four">Top provincial technologist in 1403</li>
               </ul>
             </div>
           </article>
 
           <article class="teacher-card">
-            <img src="assets/instructors/ali-mohammadzadeh-shabestari.jpg" alt="علی محمدزاده شبستری" width="720" height="720" decoding="async">
+            <img src="assets/instructors/negar-babashah.jpg" alt="Negar Babashah" width="720" height="720" decoding="async" data-i18n-alt="teachers.negar.name">
             <div>
-              <h3>علی محمدزاده شبستری</h3>
+              <h3 data-i18n="teachers.negar.name">Negar Babashah</h3>
               <ul>
-                <li>دانشجوی مهندسی کامپیوتر در <a href="https://www.sharif.ir/">دانشگاه شریف</a></li>
-                <li>سابقه چندین دوره دستیاری آموزشی برنامه‌نویسی در <a href="https://docs.ce.sharif.edu/">دانشکده کامپیوتر دانشگاه شریف</a></li>
-                <li>پژوهشگر هوش مصنوعی در <a href="https://neurailogic.com/">NeurAILogic</a></li>
-                <li>رتبه 13 کنکور ریاضی</li>
+                <li data-i18n="teachers.negar.one">BSc in Computer Engineering from Sharif University of Technology</li>
+                <li data-i18n="teachers.negar.two">Algorithm researcher at Max Planck Institute in Germany</li>
+                <li data-i18n="teachers.negar.three">Algorithm researcher at HKUST</li>
+                <li data-i18n="teachers.negar.four">Software engineer at Tapsi</li>
+                <li data-i18n="teachers.negar.five">Former math olympiad teacher at Salam schools in Tehran</li>
+                <li data-i18n="teachers.negar.six">Gold medalist in the national math olympiad</li>
               </ul>
+              <div class="teacher-links">
+                <a href="https://www.sharif.ir/" data-i18n="teachers.links.sharif">Sharif University</a>
+                <a href="https://www.mpi-inf.mpg.de/home" data-i18n="teachers.links.mpii">MPII</a>
+                <a href="https://hkust.edu.hk/" data-i18n="teachers.links.hkust">HKUST</a>
+                <a href="https://tapsi.ir/" data-i18n="teachers.links.tapsi">Tapsi</a>
+              </div>
             </div>
           </article>
 
           <article class="teacher-card">
-            <img src="assets/instructors/sina-moradi.jpg" alt="سینا مرادی" width="720" height="720" decoding="async">
+            <img src="assets/instructors/mehdi-lotfian.jpg" alt="Mehdi Lotfian" width="720" height="720" decoding="async" data-i18n-alt="teachers.mehdi.name">
             <div>
-              <h3>سینا مرادی</h3>
+              <h3 data-i18n="teachers.mehdi.name">Mehdi Lotfian</h3>
               <ul>
-                <li>دانشجوی پزشکی دانشگاه علوم پزشکی البرز</li>
-                <li>برنامه‌نویس و پژوهشگر هوش مصنوعی در رادیولوژی</li>
-                <li>مدرس سابق ریاضی در مدارس علامه حلی 8 و 5 تهران</li>
-                <li>فناور برتر استان در سال 1403</li>
+                <li data-i18n="teachers.mehdi.one">BSc in Computer Engineering from Sharif University of Technology</li>
+                <li data-i18n="teachers.mehdi.two">Machine learning researcher at EPFL in Switzerland</li>
+                <li data-i18n="teachers.mehdi.three">Computer science researcher at CUHK</li>
+                <li data-i18n="teachers.mehdi.four">Researcher at ISTA in Austria</li>
               </ul>
+              <div class="teacher-links">
+                <a href="https://www.sharif.ir/" data-i18n="teachers.links.sharif">Sharif University</a>
+                <a href="https://www.epfl.ch/en/" data-i18n="teachers.links.epfl">EPFL</a>
+                <a href="https://www.cuhk.edu.hk/" data-i18n="teachers.links.cuhk">CUHK</a>
+                <a href="https://ist.ac.at/en/institute/" data-i18n="teachers.links.ista">ISTA</a>
+              </div>
             </div>
           </article>
 
           <article class="teacher-card">
-            <img src="assets/instructors/negar-babashah.jpg" alt="نگار باباشاه" width="720" height="720" decoding="async">
+            <img src="assets/instructors/ehsan-khormali.jpg" alt="Ehsan Khormali" width="720" height="720" decoding="async" data-i18n-alt="teachers.ehsan.name">
             <div>
-              <h3>نگار باباشاه</h3>
+              <h3 data-i18n="teachers.ehsan.name">Ehsan Khormali</h3>
               <ul>
-                <li>لیسانس مهندسی کامپیوتر از دانشگاه شریف</li>
-                <li>پژوهشگر الگوریتم در <a href="https://www.mpi-inf.mpg.de/home">موسسه Max Planck</a> آلمان</li>
-                <li>پژوهشگر الگوریتم در <a href="https://hkust.edu.hk/">دانشگاه HKUST</a></li>
-                <li>مهندس نرم‌افزار در <a href="https://tapsi.ir/">تپسی</a></li>
-                <li>مدرس سابق المپیاد ریاضی در مدارس سلام تهران</li>
-                <li>مدال طلای المپیاد ریاضی کشوری</li>
+                <li data-i18n="teachers.ehsan.one">AI and neuroscience researcher</li>
+                <li data-i18n="teachers.ehsan.two">Sixth year medical student</li>
+                <li data-i18n="teachers.ehsan.three">Co-founder of Connect</li>
               </ul>
+              <div class="teacher-links">
+                <a href="https://t.me/Lets_CONNECT_fa" data-i18n="teachers.links.connect">Connect</a>
+              </div>
             </div>
           </article>
 
           <article class="teacher-card">
-            <img src="assets/instructors/mehdi-lotfian.jpg" alt="مهدی لطفیان" width="720" height="720" decoding="async">
+            <img src="assets/instructors/shayan-salehi.jpg" alt="Shayan Salehi" width="720" height="720" decoding="async" data-i18n-alt="teachers.shayan.name">
             <div>
-              <h3>مهدی لطفیان</h3>
+              <h3 data-i18n="teachers.shayan.name">Shayan Salehi</h3>
               <ul>
-                <li>لیسانس مهندسی کامپیوتر از دانشگاه شریف</li>
-                <li>پژوهشگر یادگیری ماشین در <a href="https://www.epfl.ch/en/">EPFL</a> سوییس</li>
-                <li>پژوهشگر علوم کامپیوتر در <a href="https://www.cuhk.edu.hk/">دانشگاه CUHK</a></li>
-                <li>پژوهشگر <a href="https://ist.ac.at/en/institute/">موسسه ISTA</a> اتریش</li>
+                <li data-i18n="teachers.shayan.one">AI researcher at Imperial College London</li>
+                <li data-i18n="teachers.shayan.two">BSc graduate in Computer Engineering from Sharif University of Technology</li>
+                <li data-i18n="teachers.shayan.three">Rank 25 in the national mathematics entrance exam</li>
               </ul>
+              <div class="teacher-links">
+                <a href="https://www.sharif.ir/" data-i18n="teachers.links.sharif">Sharif University</a>
+              </div>
             </div>
           </article>
 
           <article class="teacher-card">
-            <img src="assets/instructors/ehsan-khormali.jpg" alt="احسان خرمالی" width="720" height="720" decoding="async">
+            <img src="assets/instructors/kowsar-shams.jpg" alt="Kowsar Shams" width="720" height="720" decoding="async" data-i18n-alt="teachers.kowsar.name">
             <div>
-              <h3>احسان خرمالی</h3>
+              <h3 data-i18n="teachers.kowsar.name">Kowsar Shams</h3>
               <ul>
-                <li>پژوهشگر هوش مصنوعی و نوروساینس</li>
-                <li>دانشجوی سال ششم پزشکی</li>
-                <li>هم‌بنیان‌گذار <a href="https://t.me/Lets_CONNECT_fa">کانکت</a></li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="teacher-card">
-            <img src="assets/instructors/shayan-salehi.jpg" alt="شایان صالحی" width="720" height="720" decoding="async">
-            <div>
-              <h3>شایان صالحی</h3>
-              <ul>
-                <li>پژوهشگر هوش مصنوعی در Imperial College لندن</li>
-                <li>فارغ‌التحصیل کارشناسی مهندسی کامپیوتر از دانشگاه شریف</li>
-                <li>رتبه 25 کنکور ریاضی</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="teacher-card">
-            <img src="assets/instructors/kowsar-shams.jpg" alt="کوثر شمس" width="720" height="720" decoding="async">
-            <div>
-              <h3>کوثر شمس</h3>
-              <ul>
-                <li>دانشجوی کارشناسی ارشد هوش مصنوعی در دانشگاه تهران</li>
-                <li>پژوهشگر هوش مصنوعی در پژوهشکده سلول‌های بنیادی رویان</li>
-                <li>رتبه 16 کنکور کارشناسی ارشد</li>
+                <li data-i18n="teachers.kowsar.one">MSc student in AI at University of Tehran</li>
+                <li data-i18n="teachers.kowsar.two">AI researcher at Royan Stem Cell Technology Research Center</li>
+                <li data-i18n="teachers.kowsar.three">Rank 16 in the national graduate entrance exam</li>
               </ul>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="videos-section rtl-section" id="videos" lang="fa" dir="rtl" aria-labelledby="videos-title">
+      <section class="videos-section" id="videos" aria-labelledby="videos-title">
         <div class="section-heading wide">
           <div>
-            <p class="eyebrow">Public videos</p>
-            <h2 id="videos-title">ویدیوهای عمومی</h2>
+            <p class="eyebrow" data-i18n="videos.eyebrow">Public videos</p>
+            <h2 id="videos-title" data-i18n="videos.title">Public videos</h2>
           </div>
-          <p class="section-note">سه ویدیوی بخش اول دوره در تلگرام به صورت عمومی در دسترس هستند.</p>
+          <p class="section-note" data-i18n="videos.note">Three videos from the first part of the course are public on Telegram.</p>
         </div>
         <div class="video-grid">
           <article class="video-card">
-            <span>جلسه 1 از بخش اول</span>
-            <h3>فلسفه تکنولوژی و برنامه‌نویسی در عصر هوش مصنوعی</h3>
-            <p>با حضور دکتر محمدعلی آبام، همراه با انتقال تجربه فعالان و پژوهشگران هوش مصنوعی از دانشگاه شریف.</p>
-            <a href="https://t.me/AbzumsAI/72">مشاهده در تلگرام</a>
+            <span data-i18n="videos.one.kicker">Part 1, session 1</span>
+            <h3 data-i18n="videos.one.title">Philosophy of technology and programming in the age of AI</h3>
+            <p data-i18n="videos.one.text">With Dr. Mohammad Ali Abam, along with experience sharing by AI researchers and builders from Sharif University of Technology.</p>
+            <a href="https://t.me/AbzumsAI/72" data-i18n="videos.watch">Watch on Telegram</a>
           </article>
           <article class="video-card">
-            <span>جلسه 2 از بخش اول</span>
-            <h3>استارتاپ‌های سلامت دیجیتال در عصر هوش مصنوعی</h3>
-            <p>با حضور مهندس مونا اعظمی، دکتر فرید فرجی، و دکتر آذین اعتمادی‌منش، همراه با پرسش و پاسخ.</p>
-            <a href="https://t.me/AbzumsAI/75">مشاهده در تلگرام</a>
+            <span data-i18n="videos.two.kicker">Part 1, session 2</span>
+            <h3 data-i18n="videos.two.title">Digital health startups in the age of AI</h3>
+            <p data-i18n="videos.two.text">With Mona Azami, Dr. Farid Faraji, and Dr. Azin Etemadi Manesh, followed by a question and answer session.</p>
+            <a href="https://t.me/AbzumsAI/75" data-i18n="videos.watch">Watch on Telegram</a>
           </article>
           <article class="video-card">
-            <span>جلسه 3 از بخش اول</span>
-            <h3>مسیر ورود دانشجویان علوم پزشکی به هوش مصنوعی</h3>
-            <p>انتقال تجربه با دکتر معین شریعت‌نیا، دانشجوی پزشکی دانشگاه تهران و فعال حوزه هوش مصنوعی.</p>
-            <a href="https://t.me/AbzumsAI/45">مشاهده در تلگرام</a>
+            <span data-i18n="videos.three.kicker">Part 1, session 3</span>
+            <h3 data-i18n="videos.three.title">How medical students can enter AI</h3>
+            <p data-i18n="videos.three.text">An experience sharing session with Dr. Moein Shariatnia, medical student at Tehran University of Medical Sciences and active AI builder.</p>
+            <a href="https://t.me/AbzumsAI/45" data-i18n="videos.watch">Watch on Telegram</a>
           </article>
         </div>
       </section>
@@ -407,80 +443,80 @@
       <section class="repo-section" id="repos" aria-labelledby="repos-title">
         <div class="section-heading wide">
           <div>
-            <p class="eyebrow">Public repos</p>
-            <h2 id="repos-title">Course work in one place</h2>
+            <p class="eyebrow" data-i18n="repos.eyebrow">Public repos</p>
+            <h2 id="repos-title" data-i18n="repos.title">Course work in one place</h2>
           </div>
           <div class="filters" aria-label="Repo filters">
-            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-button" type="button" data-filter="course" aria-pressed="false">Course</button>
-            <button class="filter-button" type="button" data-filter="code" aria-pressed="false">Code</button>
-            <button class="filter-button" type="button" data-filter="docs" aria-pressed="false">Docs</button>
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true" data-i18n="repos.filterAll">All</button>
+            <button class="filter-button" type="button" data-filter="course" aria-pressed="false" data-i18n="repos.filterCourse">Course</button>
+            <button class="filter-button" type="button" data-filter="code" aria-pressed="false" data-i18n="repos.filterCode">Code</button>
+            <button class="filter-button" type="button" data-filter="docs" aria-pressed="false" data-i18n="repos.filterDocs">Docs</button>
           </div>
         </div>
 
         <div class="repo-tools">
-          <label class="sr-only" for="repo-search">Search repos</label>
-          <input id="repo-search" type="search" name="repo-search" placeholder="Search repos" autocomplete="off">
+          <label class="sr-only" for="repo-search" data-i18n="repos.searchLabel">Search repos</label>
+          <input id="repo-search" type="search" name="repo-search" placeholder="Search repos" autocomplete="off" data-i18n-placeholder="repos.searchPlaceholder">
           <p class="repo-count" aria-live="polite">Showing all repos</p>
         </div>
 
         <div class="repo-grid">
           <article class="repo-card" data-kind="course">
-            <span class="repo-kind">Course</span>
+            <span class="repo-kind" data-i18n="repos.kindCourse">Course</span>
             <h3>Assignments</h3>
-            <p>Homework sheets, editable sources, checks, and answer material for the course.</p>
-            <a href="https://github.com/AbzumsAI/Assignments">Open repo</a>
+            <p data-i18n="repos.assignmentsText">Homework sheets, editable sources, checks, and answer material for the course.</p>
+            <a href="https://github.com/AbzumsAI/Assignments" data-i18n="repos.openRepo">Open repo</a>
           </article>
           <article class="repo-card" data-kind="course">
-            <span class="repo-kind">Course</span>
+            <span class="repo-kind" data-i18n="repos.kindCourse">Course</span>
             <h3>Notebooks</h3>
-            <p>Python notebooks, submission notes, and checked answer files for class work.</p>
-            <a href="https://github.com/AbzumsAI/Notebooks">Open repo</a>
+            <p data-i18n="repos.notebooksText">Python notebooks, submission notes, and checked answer files for class work.</p>
+            <a href="https://github.com/AbzumsAI/Notebooks" data-i18n="repos.openRepo">Open repo</a>
           </article>
           <article class="repo-card" data-kind="code">
-            <span class="repo-kind">Code</span>
+            <span class="repo-kind" data-i18n="repos.kindCode">Code</span>
             <h3>Problems</h3>
-            <p>Small Python files used for examples and practice.</p>
-            <a href="https://github.com/AbzumsAI/Problems">Open repo</a>
+            <p data-i18n="repos.problemsText">Small Python files used for examples and practice.</p>
+            <a href="https://github.com/AbzumsAI/Problems" data-i18n="repos.openRepo">Open repo</a>
           </article>
           <article class="repo-card" data-kind="course">
-            <span class="repo-kind">Course</span>
+            <span class="repo-kind" data-i18n="repos.kindCourse">Course</span>
             <h3>PreTest</h3>
-            <p>Exam and solution LaTeX sources for pretest work.</p>
-            <a href="https://github.com/AbzumsAI/PreTest">Open repo</a>
+            <p data-i18n="repos.pretestText">Exam and solution LaTeX sources for pretest work.</p>
+            <a href="https://github.com/AbzumsAI/PreTest" data-i18n="repos.openRepo">Open repo</a>
           </article>
           <article class="repo-card" data-kind="docs">
-            <span class="repo-kind">Docs</span>
+            <span class="repo-kind" data-i18n="repos.kindDocs">Docs</span>
             <h3>Latex</h3>
-            <p>Homework template, shared course style, and build notes.</p>
-            <a href="https://github.com/AbzumsAI/Latex">Open repo</a>
+            <p data-i18n="repos.latexText">Homework template, shared course style, and build notes.</p>
+            <a href="https://github.com/AbzumsAI/Latex" data-i18n="repos.openRepo">Open repo</a>
           </article>
           <article class="repo-card" data-kind="code">
-            <span class="repo-kind">Code</span>
+            <span class="repo-kind" data-i18n="repos.kindCode">Code</span>
             <h3>QA-Bot</h3>
-            <p>Telegram bot source for common course questions.</p>
-            <a href="https://github.com/AbzumsAI/QA-Bot">Open repo</a>
+            <p data-i18n="repos.botText">Telegram bot source for common course questions.</p>
+            <a href="https://github.com/AbzumsAI/QA-Bot" data-i18n="repos.openRepo">Open repo</a>
           </article>
           <article class="repo-card" data-kind="docs">
-            <span class="repo-kind">Docs</span>
+            <span class="repo-kind" data-i18n="repos.kindDocs">Docs</span>
             <h3>.github</h3>
-            <p>Organization profile shown on GitHub.</p>
-            <a href="https://github.com/AbzumsAI/.github">Open repo</a>
+            <p data-i18n="repos.githubText">Organization profile shown on GitHub.</p>
+            <a href="https://github.com/AbzumsAI/.github" data-i18n="repos.openRepo">Open repo</a>
           </article>
           <article class="repo-card" data-kind="docs">
-            <span class="repo-kind">Docs</span>
+            <span class="repo-kind" data-i18n="repos.kindDocs">Docs</span>
             <h3>abzumsai.github.io</h3>
-            <p>Public course site served by GitHub Pages.</p>
-            <a href="https://github.com/AbzumsAI/abzumsai.github.io">Open repo</a>
+            <p data-i18n="repos.siteText">Public course site served by GitHub Pages.</p>
+            <a href="https://github.com/AbzumsAI/abzumsai.github.io" data-i18n="repos.openRepo">Open repo</a>
           </article>
         </div>
-        <p class="empty-state" hidden>No repos match this search.</p>
+        <p class="empty-state" hidden data-i18n="repos.empty">No repos match this search.</p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>AbzumsAI, Alborz University of Medical Sciences and MedX Community.</p>
-      <a href="https://github.com/AbzumsAI">GitHub organization</a>
+      <p data-i18n="footer.text">AbzumsAI, Alborz University of Medical Sciences and MedX Community.</p>
+      <a href="https://github.com/AbzumsAI" data-i18n="footer.github">GitHub organization</a>
     </footer>
 
     <script src="script.js"></script>
